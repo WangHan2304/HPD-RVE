@@ -1,0 +1,262 @@
+{
+  "experiment_info": {
+    "timestamp": "2026-06-18T16:41:43.186741",
+    "n_repeats": 10,
+    "n_groups": 5,
+    "methods": [
+      "HPD-RVE",
+      "Voronoi",
+      "Manual",
+      "Semi-Auto"
+    ]
+  },
+  "per_group_summary": {
+    "G1_SinglePhase_Cu": {
+      "config": {
+        "group_name": "G1",
+        "material_type": "Single-phase (Cu)",
+        "expected_phases": 1,
+        "rve_size": 80.0
+      },
+      "hpd_rve": {
+        "time_mean": 0.0011981010437011718,
+        "time_std": 0.00013644675910198746,
+        "time_cv": 0.11388585279959056,
+        "quality_mean": 0.39927500000000005,
+        "quality_std": 0.0011064018257396374,
+        "accuracy_mean": 0.0031157734441154606,
+        "accuracy_std": 0.0014785485838245444,
+        "grain_count_cv": 2e-05,
+        "consistency_score": 0.99998
+      },
+      "voronoi": {
+        "time_mean": 36.85008168971086,
+        "time_std": 0.0,
+        "quality_mean": 0.14741999999999997,
+        "quality_std": 0.0408156048589262,
+        "accuracy_mean": 0.009999999999999998,
+        "accuracy_std": 1.734723475976807e-18
+      },
+      "manual": {
+        "time_mean": 76.83428073335996,
+        "time_std": 12.432334551106777,
+        "quality_mean": 0.11635999999999999,
+        "quality_std": 0.02148814556912718,
+        "accuracy_mean": 0.019999999999999997,
+        "accuracy_std": 3.469446951953614e-18
+      },
+      "semiauto": {
+        "time_mean": 12.523930948164757,
+        "time_std": 1.187693584334942,
+        "quality_mean": 0.22150000000000003,
+        "quality_std": 0.05319313865528148,
+        "accuracy_mean": 0.004999999999999999,
+        "accuracy_std": 8.673617379884035e-19
+      }
+    },
+    "G2_DualPhase_DPSteel": {
+      "config": {
+        "group_name": "G2",
+        "material_type": "Dual-phase (DP Steel)",
+        "expected_phases": 2,
+        "rve_size": 100.0
+      },
+      "hpd_rve": {
+        "time_mean": 1.9438344478607177,
+        "time_std": 0.11135889167599258,
+        "time_cv": 0.0572882591923136,
+        "quality_mean": 0.387465,
+        "quality_std": 0.0007939773296511835,
+        "accuracy_mean": 0.004246062879289851,
+        "accuracy_std": 0.0009810237347014905,
+        "grain_count_cv": 2e-05,
+        "consistency_score": 0.99998
+      },
+      "voronoi": {
+        "time_mean": 177923.05906851878,
+        "time_std": 2.9103830456733704e-11,
+        "quality_mean": 0.17233,
+        "quality_std": 0.05174383151642329,
+        "accuracy_mean": 0.05080187564393089,
+        "accuracy_std": 0.016916498748676286
+      },
+      "manual": {
+        "time_mean": 169864.8019827404,
+        "time_std": 30999.70337251387,
+        "quality_mean": 0.10216,
+        "quality_std": 0.02511502339238409,
+        "accuracy_mean": 0.07389116536356863,
+        "accuracy_std": 0.032203514083274674
+      },
+      "semiauto": {
+        "time_mean": 30137.66928039617,
+        "time_std": 3073.2057123978475,
+        "quality_mean": 0.19455,
+        "quality_std": 0.04134105102679417,
+        "accuracy_mean": 0.0362978125491987,
+        "accuracy_std": 0.01235476624495737
+      }
+    },
+    "G3_MultiPhase_Alloy": {
+      "config": {
+        "group_name": "G3",
+        "material_type": "Multi-phase (Complex Alloy)",
+        "expected_phases": 3,
+        "rve_size": 120.0
+      },
+      "hpd_rve": {
+        "time_mean": 0.013101410865783692,
+        "time_std": 0.0008031217942073791,
+        "time_cv": 0.0613004051574974,
+        "quality_mean": 0.38564600000000004,
+        "quality_std": 0.0007659268894613855,
+        "accuracy_mean": 0.004202646975451423,
+        "accuracy_std": 0.0008590177914172593,
+        "grain_count_cv": 2e-05,
+        "consistency_score": 0.99998
+      },
+      "voronoi": {
+        "time_mean": 809.3869390228217,
+        "time_std": 1.1368683772161603e-13,
+        "quality_mean": 0.14373000000000002,
+        "quality_std": 0.04258316686203598,
+        "accuracy_mean": 0.055987107016572044,
+        "accuracy_std": 0.01841506615033789
+      },
+      "manual": {
+        "time_mean": 1945.9476795334363,
+        "time_std": 286.3073302358605,
+        "quality_mean": 0.08231000000000001,
+        "quality_std": 0.018505699122162343,
+        "accuracy_mean": 0.07953331340711611,
+        "accuracy_std": 0.027334342718293603
+      },
+      "semiauto": {
+        "time_mean": 359.37567657801617,
+        "time_std": 40.125304280726475,
+        "quality_mean": 0.1935,
+        "quality_std": 0.050768671442140374,
+        "accuracy_mean": 0.036044689912985546,
+        "accuracy_std": 0.015868219536190473
+      }
+    },
+    "G4_VariableGrainSize_Ni": {
+      "config": {
+        "group_name": "G4",
+        "material_type": "Variable grain size (Ni)",
+        "expected_phases": 1,
+        "rve_size": 200.0
+      },
+      "hpd_rve": {
+        "time_mean": 0.0003273487091064453,
+        "time_std": 8.606217216386817e-06,
+        "time_cv": 0.026290671009147917,
+        "quality_mean": 0.39849999999999997,
+        "quality_std": 0.0015383432646844458,
+        "accuracy_mean": 0.0032021488909864614,
+        "accuracy_std": 0.0020453927879151893,
+        "grain_count_cv": 2e-05,
+        "consistency_score": 0.99998
+      },
+      "voronoi": {
+        "time_mean": 10.99146454710798,
+        "time_std": 0.0,
+        "quality_mean": 0.13509,
+        "quality_std": 0.027420154995914957,
+        "accuracy_mean": 0.009999999999999998,
+        "accuracy_std": 1.734723475976807e-18
+      },
+      "manual": {
+        "time_mean": 48.191173305963744,
+        "time_std": 7.024084702272882,
+        "quality_mean": 0.11562999999999998,
+        "quality_std": 0.029570290833875818,
+        "accuracy_mean": 0.019999999999999997,
+        "accuracy_std": 3.469446951953614e-18
+      },
+      "semiauto": {
+        "time_mean": 7.23894727762068,
+        "time_std": 0.6292202696711889,
+        "quality_mean": 0.19113,
+        "quality_std": 0.044589865440478736,
+        "accuracy_mean": 0.004999999999999999,
+        "accuracy_std": 8.673617379884035e-19
+      }
+    },
+    "G5_MultiComponent_Steel": {
+      "config": {
+        "group_name": "G5",
+        "material_type": "Multi-component (Complex Steel)",
+        "expected_phases": 4,
+        "rve_size": 120.0
+      },
+      "hpd_rve": {
+        "time_mean": 0.7478880167007447,
+        "time_std": 0.20376616623496127,
+        "time_cv": 0.2724554501272281,
+        "quality_mean": 0.38432285714285713,
+        "quality_std": 0.0005288879361259745,
+        "accuracy_mean": 0.004056367522194982,
+        "accuracy_std": 0.0005774465950091578,
+        "grain_count_cv": 2e-05,
+        "consistency_score": 0.99998
+      },
+      "voronoi": {
+        "time_mean": 65080.16001605972,
+        "time_std": 0.0,
+        "quality_mean": 0.13882,
+        "quality_std": 0.026305847258736987,
+        "accuracy_mean": 0.04373648466589638,
+        "accuracy_std": 0.021026140749518203
+      },
+      "manual": {
+        "time_mean": 124440.19095753056,
+        "time_std": 25126.902884388674,
+        "quality_mean": 0.09579,
+        "quality_std": 0.019087715945078392,
+        "accuracy_mean": 0.0802474151216239,
+        "accuracy_std": 0.020753312789878412
+      },
+      "semiauto": {
+        "time_mean": 23742.10560320817,
+        "time_std": 2242.598870919029,
+        "quality_mean": 0.20345,
+        "quality_std": 0.04719110615359636,
+        "accuracy_mean": 0.03432342714442812,
+        "accuracy_std": 0.01572557646071733
+      }
+    }
+  },
+  "generalization": {
+    "G1_SinglePhase_Cu": {
+      "material": "Single-phase (Cu)",
+      "num_phases": 1,
+      "success": "True",
+      "phase_accuracy": 0.0031157734441154606
+    },
+    "G2_DualPhase_DPSteel": {
+      "material": "Dual-phase (DP Steel)",
+      "num_phases": 2,
+      "success": "True",
+      "phase_accuracy": 0.004246062879289851
+    },
+    "G3_MultiPhase_Alloy": {
+      "material": "Multi-phase (Complex Alloy)",
+      "num_phases": 3,
+      "success": "True",
+      "phase_accuracy": 0.004202646975451423
+    },
+    "G4_VariableGrainSize_Ni": {
+      "material": "Variable grain size (Ni)",
+      "num_phases": 1,
+      "success": "True",
+      "phase_accuracy": 0.0032021488909864614
+    },
+    "G5_MultiComponent_Steel": {
+      "material": "Multi-component (Complex Steel)",
+      "num_phases": 4,
+      "success": "True",
+      "phase_accuracy": 0.004056367522194982
+    }
+  }
+}

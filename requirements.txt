@@ -1,0 +1,15 @@
+# Python dependencies for HPD-RVE
+numpy>=1.20.0
+scipy>=1.7.0
+matplotlib>=3.4.0
+scikit-learn>=1.0.0
+python-docx>=0.8.11
+
+# Optional: DAMASK HDF5 post-processing
+h5py>=3.0.0
+
+# Optional: Gaussian Process surrogate modeling
+# (included in scikit-learn)
+
+# Optional: Uncertainty quantification
+# chaospy>=4.0  # for polynomial chaos expansion

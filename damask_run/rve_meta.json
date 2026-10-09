@@ -1,0 +1,8 @@
+{
+  "grid_size": 64,
+  "n_grains": 100,
+  "n_ferrite": 72,
+  "n_martensite": 28,
+  "ferrite_vol": 0.72,
+  "seed": 42
+}

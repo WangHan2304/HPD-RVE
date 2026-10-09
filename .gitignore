@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Generated outputs
+*.docx
+!template*.docx
+
+# Large data files (keep JSON results for reproducibility)
+# Uncomment if you want to exclude large results:
+# parametric_scan_results*.json
+# cpfem_case_study_results.json
+# fullfield_case_study_results.json
+
+# DAMASK output (large HDF5 files)
+damask_run/results_*/
+damask_run/*.hdf5
+!damask_run/test_output.hdf5
+
+# Generated figures (optional - uncomment to exclude)
+# figures/
+# figures_paper/
+# figures_paper_latest/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# CodeBuddy
+.codebuddy/
+
+# Temporary scripts
+fix_paths_for_opensource.py

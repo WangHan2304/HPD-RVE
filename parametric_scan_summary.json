@@ -1,0 +1,11 @@
+{
+  "sens_vm_yield": 74.03499999999991,
+  "sens_ratio_yield": 0.3599999999999568,
+  "slope_vm": 185.2399999999996,
+  "r2_vm": 0.9999997202297268,
+  "k_hp": NaN,
+  "sigma0_hp": NaN,
+  "r2_hp": NaN,
+  "sigma_pure_f": 302.9,
+  "sigma_pure_m": 492.2
+}

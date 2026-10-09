@@ -1,0 +1,28 @@
+loadstep:
+- boundary_conditions:
+    mechanical:
+      P:
+      - x
+      - x
+      - x
+      - x
+      - x
+      - x
+      - x
+      - x
+      - 0
+      dot_F:
+      - 0.001
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - x
+  discretization:
+    N: 50
+    t: 100.0
+solver:
+  mechanical: spectral_basic

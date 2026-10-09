@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hpd-rve"
+version = "1.0.0"
+description = "Hierarchical Parameter-Driven Automated RVE Generation for CPFEM Simulations"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [
+    {name = "HPD-RVE Authors"}
+]
+keywords = [
+    "rve", "crystal-plasticity", "cpfe", "microstructure",
+    "materials-science", "polycrystalline", "voronoi", "damask"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Materials Science",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy>=1.20.0",
+    "scipy>=1.7.0",
+    "matplotlib>=3.4.0",
+    "scikit-learn>=1.0.0",
+    "python-docx>=0.8.11",
+    "h5py>=3.0.0",
+]
+
+[project.optional-dependencies]
+full = [
+    "pyyaml>=5.0",
+    "chaospy>=4.0",
+]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/HPD-RVE/HPD-RVE"
+"Bug Reports" = "https://github.com/HPD-RVE/HPD-RVE/issues"
+Source = "https://github.com/HPD-RVE/HPD-RVE"
+
+[tool.setuptools]
+py-modules = [
+    "rve_core",
+    "rve_geom_export",
+    "cpfem_simulation",
+    "parametric_cpfem",
+    "g3_validation",
+    "uq_analysis",
+    "damask_fullfield",
+    "experimental_benchmark_and_surrogate",
+]
