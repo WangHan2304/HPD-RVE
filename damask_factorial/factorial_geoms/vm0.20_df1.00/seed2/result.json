@@ -1,0 +1,16 @@
+{
+  "vm_target": 0.2,
+  "vm_actual": 0.20001220703125,
+  "dm_df_target": 1.0,
+  "dm_df_actual": 1.000025431056417,
+  "n_martensite_grains": 14,
+  "n_ferrite_grains": 56,
+  "N": 32,
+  "seed": 2,
+  "n_voxels": 32768,
+  "status": "OK",
+  "time_s": 604.2,
+  "sigma_y_MPa": 322.89033291729254,
+  "UTS_MPa": 441.7738230033878,
+  "E_MPa": 33509.7334097332
+}

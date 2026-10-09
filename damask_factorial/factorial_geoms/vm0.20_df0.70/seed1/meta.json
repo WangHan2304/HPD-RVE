@@ -1,0 +1,11 @@
+{
+  "vm_target": 0.2,
+  "vm_actual": 0.20001220703125,
+  "dm_df_target": 0.7,
+  "dm_df_actual": 0.6933789072603201,
+  "n_martensite_grains": 30,
+  "n_ferrite_grains": 40,
+  "N": 32,
+  "seed": 1,
+  "n_voxels": 32768
+}

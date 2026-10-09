@@ -1,0 +1,30 @@
+{
+  "N": 64,
+  "voxel_size_um": 1.0,
+  "n_material": 70,
+  "vm_actual": 0.279998779296875,
+  "dm_df_actual": 0.9906516592991333,
+  "grain_size_martensite_vox": {
+    "mean": 3670.0,
+    "std": 1579.0710560326283,
+    "min": 932,
+    "max": 6846,
+    "n_grains": 20
+  },
+  "grain_size_ferrite_vox": {
+    "mean": 3774.88,
+    "std": 2423.1864859312827,
+    "min": 610,
+    "max": 11887,
+    "n_grains": 50
+  },
+  "misorientation_deg": {
+    "mean": 40.98471848159874,
+    "std": 10.787080009535332,
+    "median": 41.72620920021132
+  },
+  "rotation_angle_deg": {
+    "mean": 130.19151169220092,
+    "std": 36.0514356087597
+  }
+}

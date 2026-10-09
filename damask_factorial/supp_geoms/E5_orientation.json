@@ -1,0 +1,9 @@
+{
+  "n": 20000,
+  "w_mean": 0.4238036910351215,
+  "theta_mean_deg": 126.5419330266288,
+  "ks_D_semicircle": 0.004086795505945401,
+  "ks_p_semicircle": 0.8906484604570697,
+  "euler_theta_mean_deg": 6.352772027534636,
+  "conclusion": "\u751f\u6210\u91c7\u7528\u5747\u5300\u56db\u5143\u6570(Shoemake), \u65cb\u8f6c\u89d2\u670d\u4ece SO(3) \u5747\u5300\u6d4b\u5ea6(\u03b8\u5747\u503c~90\u00b0); \u5747\u5300Euler\u5bf9\u7167\u663e\u793a\u03b8\u5747\u503c\u504f\u4f4e(\u504f\u7f6e), \u8bc1\u4f2a\u4ee3\u7801\u72af\u8be5\u9519"
+}
