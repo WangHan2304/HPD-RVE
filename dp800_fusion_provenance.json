@@ -1,0 +1,295 @@
+{
+  "composition_name": "DP800",
+  "fusion_timestamp": "2026-09-29T15:45:58Z",
+  "fusion_engine_version": "HPD-RVE v2.1.0",
+  "warning_threshold": 0.2,
+  "conflicts_detected": 0,
+  "conflicts_resolved": 0,
+  "phases": [
+    {
+      "phase_name": "ferrite",
+      "volume_fraction": 0.7172,
+      "_provenance": {
+        "volume_fraction": {
+          "source": "EXPERIMENTAL",
+          "confidence": 1.0,
+          "confidence_label": "HIGH",
+          "raw_value": 0.71,
+          "candidate_values": [
+            {
+              "value": 0.71,
+              "source": "EXPERIMENTAL"
+            },
+            {
+              "value": 0.72,
+              "source": "FILE"
+            },
+            {
+              "value": 0.5,
+              "source": "LIBRARY_PHASE"
+            }
+          ],
+          "resolution_rule": "EXPERIMENTAL > LIBRARY_PHASE (Equation 3)",
+          "normalized_from": 0.71,
+          "normalization_factor": 0.99
+        }
+      },
+      "lattice_structure": "BCC",
+      "_lattice_provenance": {
+        "source": "EXPERIMENTAL",
+        "confidence": 1.0,
+        "confidence_label": "HIGH",
+        "raw_value": "BCC",
+        "candidate_values": [
+          {
+            "value": "BCC",
+            "source": "EXPERIMENTAL"
+          },
+          {
+            "value": "BCC",
+            "source": "LIBRARY_PHASE"
+          }
+        ],
+        "resolution_rule": "EXPERIMENTAL > LIBRARY_PHASE (Equation 3)"
+      },
+      "mean_grain_size_micron": 12.3,
+      "grain_size_std_micron": 3.1,
+      "_grain_size_provenance": {
+        "source": "EXPERIMENTAL",
+        "confidence": 1.0,
+        "confidence_label": "HIGH",
+        "raw_value": 12.3,
+        "candidate_values": [
+          {
+            "value": 12.3,
+            "source": "EXPERIMENTAL"
+          },
+          {
+            "value": 20.0,
+            "source": "LIBRARY_PHASE"
+          }
+        ],
+        "resolution_rule": "EXPERIMENTAL > LIBRARY_PHASE (Equation 3)"
+      },
+      "num_grains": 537,
+      "_grain_count_provenance": {
+        "source": "COMPUTED",
+        "confidence": 0.55,
+        "confidence_label": "MEDIUM-LOW",
+        "raw_value": 537,
+        "comment": "Estimated from RVE size (100.0 μm) and grain size (12.3 μm): ceil[(100.0/12.3)³] = 537"
+      },
+      "crss_initial_MPa": 135.0,
+      "hardening_h0_MPa": 350.0,
+      "hardening_xi_inf_MPa": 250.0,
+      "strain_rate_sensitivity_n": 20.0,
+      "elastic_C11_GPa": 237.0,
+      "elastic_C12_GPa": 141.0,
+      "elastic_C44_GPa": 116.0,
+      "_crss_initial_MPa_provenance": {
+        "source": "EXPERIMENTAL",
+        "confidence": 1.0,
+        "confidence_label": "HIGH",
+        "raw_value": 135.0,
+        "candidate_values": [
+          {
+            "value": 135.0,
+            "source": "EXPERIMENTAL"
+          },
+          {
+            "value": 120.0,
+            "source": "LIBRARY_PHASE"
+          }
+        ],
+        "resolution_rule": "EXPERIMENTAL > LIBRARY_PHASE (Equation 3)",
+        "relative_deviation": 0.125,
+        "deviation_percent": "12.5%",
+        "warning_triggered": false,
+        "warning_threshold": 0.2
+      },
+      "_hardening_h0_MPa_provenance": {
+        "source": "LIBRARY_PHASE",
+        "confidence": 0.85,
+        "confidence_label": "MEDIUM-HIGH",
+        "raw_value": 350.0
+      },
+      "_hardening_xi_inf_MPa_provenance": {
+        "source": "LIBRARY_PHASE",
+        "confidence": 0.85,
+        "confidence_label": "MEDIUM-HIGH",
+        "raw_value": 250.0
+      },
+      "_strain_rate_sensitivity_n_provenance": {
+        "source": "LIBRARY_PHASE",
+        "confidence": 0.85,
+        "confidence_label": "MEDIUM-HIGH",
+        "raw_value": 20.0
+      },
+      "_elastic_C11_GPa_provenance": {
+        "source": "LIBRARY_PHASE",
+        "confidence": 0.85,
+        "confidence_label": "MEDIUM-HIGH",
+        "raw_value": 237.0
+      },
+      "_elastic_C12_GPa_provenance": {
+        "source": "LIBRARY_PHASE",
+        "confidence": 0.85,
+        "confidence_label": "MEDIUM-HIGH",
+        "raw_value": 141.0
+      },
+      "_elastic_C44_GPa_provenance": {
+        "source": "LIBRARY_PHASE",
+        "confidence": 0.85,
+        "confidence_label": "MEDIUM-HIGH",
+        "raw_value": 116.0
+      }
+    },
+    {
+      "phase_name": "martensite",
+      "volume_fraction": 0.2828,
+      "_provenance": {
+        "volume_fraction": {
+          "source": "FILE",
+          "confidence": 0.7,
+          "confidence_label": "MEDIUM",
+          "raw_value": 0.28,
+          "candidate_values": [
+            {
+              "value": 0.28,
+              "source": "FILE"
+            },
+            {
+              "value": 0.5,
+              "source": "LIBRARY_PHASE"
+            }
+          ],
+          "resolution_rule": "FILE > LIBRARY_PHASE",
+          "normalized_from": 0.28,
+          "normalization_factor": 0.99
+        }
+      },
+      "lattice_structure": "BCT",
+      "_lattice_provenance": {
+        "source": "LIBRARY_PHASE",
+        "confidence": 0.85,
+        "confidence_label": "MEDIUM-HIGH",
+        "raw_value": "BCT"
+      },
+      "mean_grain_size_micron": 5.0,
+      "grain_size_std_micron": 2.0,
+      "_grain_size_provenance": {
+        "source": "LIBRARY_PHASE",
+        "confidence": 0.85,
+        "confidence_label": "MEDIUM-HIGH",
+        "raw_value": 5.0
+      },
+      "num_grains": 8000,
+      "_grain_count_provenance": {
+        "source": "COMPUTED",
+        "confidence": 0.55,
+        "confidence_label": "MEDIUM-LOW",
+        "raw_value": 8000,
+        "comment": "Estimated from RVE size (100.0 μm) and grain size (5.0 μm): ceil[(100.0/5.0)³] = 8000"
+      },
+      "crss_initial_MPa": 450.0,
+      "hardening_h0_MPa": 1200.0,
+      "hardening_xi_inf_MPa": 900.0,
+      "strain_rate_sensitivity_n": 20.0,
+      "elastic_C11_GPa": 250.0,
+      "elastic_C12_GPa": 150.0,
+      "elastic_C44_GPa": 120.0,
+      "_crss_initial_MPa_provenance": {
+        "source": "LIBRARY_PHASE",
+        "confidence": 0.85,
+        "confidence_label": "MEDIUM-HIGH",
+        "raw_value": 450.0
+      },
+      "_hardening_h0_MPa_provenance": {
+        "source": "LIBRARY_PHASE",
+        "confidence": 0.85,
+        "confidence_label": "MEDIUM-HIGH",
+        "raw_value": 1200.0
+      },
+      "_hardening_xi_inf_MPa_provenance": {
+        "source": "LIBRARY_PHASE",
+        "confidence": 0.85,
+        "confidence_label": "MEDIUM-HIGH",
+        "raw_value": 900.0
+      },
+      "_strain_rate_sensitivity_n_provenance": {
+        "source": "LIBRARY_PHASE",
+        "confidence": 0.85,
+        "confidence_label": "MEDIUM-HIGH",
+        "raw_value": 20.0
+      },
+      "_elastic_C11_GPa_provenance": {
+        "source": "LIBRARY_PHASE",
+        "confidence": 0.85,
+        "confidence_label": "MEDIUM-HIGH",
+        "raw_value": 250.0
+      },
+      "_elastic_C12_GPa_provenance": {
+        "source": "LIBRARY_PHASE",
+        "confidence": 0.85,
+        "confidence_label": "MEDIUM-HIGH",
+        "raw_value": 150.0
+      },
+      "_elastic_C44_GPa_provenance": {
+        "source": "LIBRARY_PHASE",
+        "confidence": 0.85,
+        "confidence_label": "MEDIUM-HIGH",
+        "raw_value": 120.0
+      },
+      "_mechanical_provenance": {
+        "source": "LIBRARY_PHASE",
+        "confidence": 0.85,
+        "confidence_label": "MEDIUM-HIGH",
+        "global_fallback": true,
+        "comment": "All mechanical parameters for martensite sourced from library; no experimental mechanical data available"
+      }
+    }
+  ],
+  "fusion_statistics": {
+    "total_parameters": 21,
+    "parameters_from_experiment": 3,
+    "parameters_from_library": 16,
+    "parameters_from_file": 0,
+    "parameters_computed": 2,
+    "conflicts_detected": 0,
+    "warnings_issued": 0,
+    "average_confidence": 0.84
+  },
+  "audit_trail": [
+    {
+      "timestamp": "2026-09-29T15:45:58.029Z",
+      "event": "FUSION_START",
+      "material": "DP800",
+      "sources_available": [
+        "material_file",
+        "experimental_data",
+        "pre_configured_library"
+      ]
+    },
+    {
+      "timestamp": "2026-09-29T15:45:58.029Z",
+      "event": "PHASE_IDENTIFIED",
+      "phases": [
+        "martensite",
+        "ferrite"
+      ]
+    },
+    {
+      "timestamp": "2026-09-29T15:45:58.162Z",
+      "event": "NORMALIZATION",
+      "raw_sum": 0.99,
+      "normalization_factor": 1.0101
+    },
+    {
+      "timestamp": "2026-09-29T15:45:58.162Z",
+      "event": "FUSION_COMPLETE",
+      "status": "SUCCESS",
+      "total_parameters_fused": 21,
+      "warnings": 0
+    }
+  ]
+}
