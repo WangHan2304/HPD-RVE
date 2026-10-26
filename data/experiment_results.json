@@ -1,0 +1,2278 @@
+{
+  "experiment_info": {
+    "timestamp": "2026-06-18T16:41:43.186784",
+    "version": "v3",
+    "parts": [
+      "benchmark",
+      "ablation",
+      "sensitivity",
+      "statistics",
+      "reproducibility",
+      "experimental_benchmark"
+    ]
+  },
+  "benchmark": {
+    "experiment_info": {
+      "timestamp": "2026-06-18T16:41:43.186741",
+      "n_repeats": 10,
+      "n_groups": 5,
+      "methods": [
+        "HPD-RVE",
+        "Voronoi",
+        "Manual",
+        "Semi-Auto"
+      ]
+    },
+    "per_group_summary": {
+      "G1_SinglePhase_Cu": {
+        "config": {
+          "group_name": "G1",
+          "material_type": "Single-phase (Cu)",
+          "expected_phases": 1,
+          "rve_size": 80.0
+        },
+        "hpd_rve": {
+          "time_mean": 0.0011981010437011718,
+          "time_std": 0.00013644675910198746,
+          "time_cv": 0.11388585279959056,
+          "quality_mean": 0.39927500000000005,
+          "quality_std": 0.0011064018257396374,
+          "accuracy_mean": 0.0031157734441154606,
+          "accuracy_std": 0.0014785485838245444,
+          "grain_count_cv": 2e-05,
+          "consistency_score": 0.99998
+        },
+        "voronoi": {
+          "time_mean": 36.85008168971086,
+          "time_std": 0.0,
+          "quality_mean": 0.14741999999999997,
+          "quality_std": 0.0408156048589262,
+          "accuracy_mean": 0.009999999999999998,
+          "accuracy_std": 1.734723475976807e-18
+        },
+        "manual": {
+          "time_mean": 76.83428073335996,
+          "time_std": 12.432334551106777,
+          "quality_mean": 0.11635999999999999,
+          "quality_std": 0.02148814556912718,
+          "accuracy_mean": 0.019999999999999997,
+          "accuracy_std": 3.469446951953614e-18
+        },
+        "semiauto": {
+          "time_mean": 12.523930948164757,
+          "time_std": 1.187693584334942,
+          "quality_mean": 0.22150000000000003,
+          "quality_std": 0.05319313865528148,
+          "accuracy_mean": 0.004999999999999999,
+          "accuracy_std": 8.673617379884035e-19
+        }
+      },
+      "G2_DualPhase_DPSteel": {
+        "config": {
+          "group_name": "G2",
+          "material_type": "Dual-phase (DP Steel)",
+          "expected_phases": 2,
+          "rve_size": 100.0
+        },
+        "hpd_rve": {
+          "time_mean": 1.9438344478607177,
+          "time_std": 0.11135889167599258,
+          "time_cv": 0.0572882591923136,
+          "quality_mean": 0.387465,
+          "quality_std": 0.0007939773296511835,
+          "accuracy_mean": 0.004246062879289851,
+          "accuracy_std": 0.0009810237347014905,
+          "grain_count_cv": 2e-05,
+          "consistency_score": 0.99998
+        },
+        "voronoi": {
+          "time_mean": 177923.05906851878,
+          "time_std": 2.9103830456733704e-11,
+          "quality_mean": 0.17233,
+          "quality_std": 0.05174383151642329,
+          "accuracy_mean": 0.05080187564393089,
+          "accuracy_std": 0.016916498748676286
+        },
+        "manual": {
+          "time_mean": 169864.8019827404,
+          "time_std": 30999.70337251387,
+          "quality_mean": 0.10216,
+          "quality_std": 0.02511502339238409,
+          "accuracy_mean": 0.07389116536356863,
+          "accuracy_std": 0.032203514083274674
+        },
+        "semiauto": {
+          "time_mean": 30137.66928039617,
+          "time_std": 3073.2057123978475,
+          "quality_mean": 0.19455,
+          "quality_std": 0.04134105102679417,
+          "accuracy_mean": 0.0362978125491987,
+          "accuracy_std": 0.01235476624495737
+        }
+      },
+      "G3_MultiPhase_Alloy": {
+        "config": {
+          "group_name": "G3",
+          "material_type": "Multi-phase (Complex Alloy)",
+          "expected_phases": 3,
+          "rve_size": 120.0
+        },
+        "hpd_rve": {
+          "time_mean": 0.013101410865783692,
+          "time_std": 0.0008031217942073791,
+          "time_cv": 0.0613004051574974,
+          "quality_mean": 0.38564600000000004,
+          "quality_std": 0.0007659268894613855,
+          "accuracy_mean": 0.004202646975451423,
+          "accuracy_std": 0.0008590177914172593,
+          "grain_count_cv": 2e-05,
+          "consistency_score": 0.99998
+        },
+        "voronoi": {
+          "time_mean": 809.3869390228217,
+          "time_std": 1.1368683772161603e-13,
+          "quality_mean": 0.14373000000000002,
+          "quality_std": 0.04258316686203598,
+          "accuracy_mean": 0.055987107016572044,
+          "accuracy_std": 0.01841506615033789
+        },
+        "manual": {
+          "time_mean": 1945.9476795334363,
+          "time_std": 286.3073302358605,
+          "quality_mean": 0.08231000000000001,
+          "quality_std": 0.018505699122162343,
+          "accuracy_mean": 0.07953331340711611,
+          "accuracy_std": 0.027334342718293603
+        },
+        "semiauto": {
+          "time_mean": 359.37567657801617,
+          "time_std": 40.125304280726475,
+          "quality_mean": 0.1935,
+          "quality_std": 0.050768671442140374,
+          "accuracy_mean": 0.036044689912985546,
+          "accuracy_std": 0.015868219536190473
+        }
+      },
+      "G4_VariableGrainSize_Ni": {
+        "config": {
+          "group_name": "G4",
+          "material_type": "Variable grain size (Ni)",
+          "expected_phases": 1,
+          "rve_size": 200.0
+        },
+        "hpd_rve": {
+          "time_mean": 0.0003273487091064453,
+          "time_std": 8.606217216386817e-06,
+          "time_cv": 0.026290671009147917,
+          "quality_mean": 0.39849999999999997,
+          "quality_std": 0.0015383432646844458,
+          "accuracy_mean": 0.0032021488909864614,
+          "accuracy_std": 0.0020453927879151893,
+          "grain_count_cv": 2e-05,
+          "consistency_score": 0.99998
+        },
+        "voronoi": {
+          "time_mean": 10.99146454710798,
+          "time_std": 0.0,
+          "quality_mean": 0.13509,
+          "quality_std": 0.027420154995914957,
+          "accuracy_mean": 0.009999999999999998,
+          "accuracy_std": 1.734723475976807e-18
+        },
+        "manual": {
+          "time_mean": 48.191173305963744,
+          "time_std": 7.024084702272882,
+          "quality_mean": 0.11562999999999998,
+          "quality_std": 0.029570290833875818,
+          "accuracy_mean": 0.019999999999999997,
+          "accuracy_std": 3.469446951953614e-18
+        },
+        "semiauto": {
+          "time_mean": 7.23894727762068,
+          "time_std": 0.6292202696711889,
+          "quality_mean": 0.19113,
+          "quality_std": 0.044589865440478736,
+          "accuracy_mean": 0.004999999999999999,
+          "accuracy_std": 8.673617379884035e-19
+        }
+      },
+      "G5_MultiComponent_Steel": {
+        "config": {
+          "group_name": "G5",
+          "material_type": "Multi-component (Complex Steel)",
+          "expected_phases": 4,
+          "rve_size": 120.0
+        },
+        "hpd_rve": {
+          "time_mean": 0.7478880167007447,
+          "time_std": 0.20376616623496127,
+          "time_cv": 0.2724554501272281,
+          "quality_mean": 0.38432285714285713,
+          "quality_std": 0.0005288879361259745,
+          "accuracy_mean": 0.004056367522194982,
+          "accuracy_std": 0.0005774465950091578,
+          "grain_count_cv": 2e-05,
+          "consistency_score": 0.99998
+        },
+        "voronoi": {
+          "time_mean": 65080.16001605972,
+          "time_std": 0.0,
+          "quality_mean": 0.13882,
+          "quality_std": 0.026305847258736987,
+          "accuracy_mean": 0.04373648466589638,
+          "accuracy_std": 0.021026140749518203
+        },
+        "manual": {
+          "time_mean": 124440.19095753056,
+          "time_std": 25126.902884388674,
+          "quality_mean": 0.09579,
+          "quality_std": 0.019087715945078392,
+          "accuracy_mean": 0.0802474151216239,
+          "accuracy_std": 0.020753312789878412
+        },
+        "semiauto": {
+          "time_mean": 23742.10560320817,
+          "time_std": 2242.598870919029,
+          "quality_mean": 0.20345,
+          "quality_std": 0.04719110615359636,
+          "accuracy_mean": 0.03432342714442812,
+          "accuracy_std": 0.01572557646071733
+        }
+      }
+    },
+    "generalization": {
+      "G1_SinglePhase_Cu": {
+        "material": "Single-phase (Cu)",
+        "num_phases": 1,
+        "success": "True",
+        "phase_accuracy": 0.0031157734441154606
+      },
+      "G2_DualPhase_DPSteel": {
+        "material": "Dual-phase (DP Steel)",
+        "num_phases": 2,
+        "success": "True",
+        "phase_accuracy": 0.004246062879289851
+      },
+      "G3_MultiPhase_Alloy": {
+        "material": "Multi-phase (Complex Alloy)",
+        "num_phases": 3,
+        "success": "True",
+        "phase_accuracy": 0.004202646975451423
+      },
+      "G4_VariableGrainSize_Ni": {
+        "material": "Variable grain size (Ni)",
+        "num_phases": 1,
+        "success": "True",
+        "phase_accuracy": 0.0032021488909864614
+      },
+      "G5_MultiComponent_Steel": {
+        "material": "Multi-component (Complex Steel)",
+        "num_phases": 4,
+        "success": "True",
+        "phase_accuracy": 0.004056367522194982
+      }
+    }
+  },
+  "ablation": {
+    "G1_SinglePhase_Cu": {
+      "config": {
+        "group_name": "G1",
+        "material_type": "Single-phase (Cu)",
+        "expected_phases": 1
+      },
+      "variants": {
+        "Full": {
+          "time_mean": 0.001108837127685547,
+          "time_std": 7.89392214014077e-05,
+          "quality_mean": 0.3994,
+          "accuracy_mean": 0.00342784365620305
+        },
+        "w/o Data Fusion": {
+          "time_mean": 0.0035611629486083985,
+          "time_std": 0.00015618623330134076,
+          "quality_mean": 0.40012499999999995,
+          "accuracy_mean": 0.0034526722970630976
+        },
+        "w/o Adaptive Models": {
+          "time_mean": 0.0007794857025146485,
+          "time_std": 0.0001165713844322335,
+          "quality_mean": 0.26734,
+          "accuracy_mean": 0.005789822347634444
+        },
+        "w/o Param Library": {
+          "time_mean": 0.00359804630279541,
+          "time_std": 0.0002519027414773021,
+          "quality_mean": 0.39966,
+          "accuracy_mean": 0.004294217969387404
+        }
+      }
+    },
+    "G2_DualPhase_DPSteel": {
+      "config": {
+        "group_name": "G2",
+        "material_type": "Dual-phase (DP Steel)",
+        "expected_phases": 2
+      },
+      "variants": {
+        "Full": {
+          "time_mean": 1.900174617767334,
+          "time_std": 0.06941779729157313,
+          "quality_mean": 0.38794249999999997,
+          "accuracy_mean": 0.004473557783649379
+        },
+        "w/o Data Fusion": {
+          "time_mean": 0.00974586009979248,
+          "time_std": 0.0005244929831848934,
+          "quality_mean": 0.3907,
+          "accuracy_mean": 0.003952396559837883
+        },
+        "w/o Adaptive Models": {
+          "time_mean": 0.7243767261505127,
+          "time_std": 0.0054638473545461225,
+          "quality_mean": 0.26656,
+          "accuracy_mean": 0.0033146764806005757
+        },
+        "w/o Param Library": {
+          "time_mean": 1.925951313972473,
+          "time_std": 0.04480869694348804,
+          "quality_mean": 0.3879325,
+          "accuracy_mean": 0.00349102316160079
+        }
+      }
+    },
+    "G3_MultiPhase_Alloy": {
+      "config": {
+        "group_name": "G3",
+        "material_type": "Multi-phase (Complex Alloy)",
+        "expected_phases": 3
+      },
+      "variants": {
+        "Full": {
+          "time_mean": 0.01296076774597168,
+          "time_std": 0.0003486605487343184,
+          "quality_mean": 0.385902,
+          "accuracy_mean": 0.004126948459662756
+        },
+        "w/o Data Fusion": {
+          "time_mean": 0.017954230308532715,
+          "time_std": 0.0004348785109843644,
+          "quality_mean": 0.3875825,
+          "accuracy_mean": 0.0036034905477984928
+        },
+        "w/o Adaptive Models": {
+          "time_mean": 0.004292058944702149,
+          "time_std": 0.00021605956262641163,
+          "quality_mean": 0.26719,
+          "accuracy_mean": 0.00397074855745391
+        },
+        "w/o Param Library": {
+          "time_mean": 0.017876911163330077,
+          "time_std": 0.00043765213200899387,
+          "quality_mean": 0.38718,
+          "accuracy_mean": 0.003908821475881217
+        }
+      }
+    },
+    "G4_VariableGrainSize_Ni": {
+      "config": {
+        "group_name": "G4",
+        "material_type": "Variable grain size (Ni)",
+        "expected_phases": 1
+      },
+      "variants": {
+        "Full": {
+          "time_mean": 0.0003283977508544922,
+          "time_std": 9.420521177846156e-06,
+          "quality_mean": 0.3994,
+          "accuracy_mean": 0.0035893105316093022
+        },
+        "w/o Data Fusion": {
+          "time_mean": 0.0035301685333251954,
+          "time_std": 0.0001621178387171584,
+          "quality_mean": 0.4000399999999999,
+          "accuracy_mean": 0.003226948490810411
+        },
+        "w/o Adaptive Models": {
+          "time_mean": 0.00023052692413330078,
+          "time_std": 8.548195512000183e-06,
+          "quality_mean": 0.26748,
+          "accuracy_mean": 0.003033602891927911
+        },
+        "w/o Param Library": {
+          "time_mean": 0.0003194570541381836,
+          "time_std": 2.9748868688471497e-06,
+          "quality_mean": 0.399405,
+          "accuracy_mean": 0.00376901233169048
+        }
+      }
+    },
+    "G5_MultiComponent_Steel": {
+      "config": {
+        "group_name": "G5",
+        "material_type": "Multi-component (Complex Steel)",
+        "expected_phases": 4
+      },
+      "variants": {
+        "Full": {
+          "time_mean": 0.6651217699050903,
+          "time_std": 0.004958796582548019,
+          "quality_mean": 0.3846185714285714,
+          "accuracy_mean": 0.003838266978394253
+        },
+        "w/o Data Fusion": {
+          "time_mean": 0.028548812866210936,
+          "time_std": 0.0004238073456367756,
+          "quality_mean": 0.385834,
+          "accuracy_mean": 0.0039846312383601135
+        },
+        "w/o Adaptive Models": {
+          "time_mean": 0.1616668224334717,
+          "time_std": 0.0021357270396902884,
+          "quality_mean": 0.26632,
+          "accuracy_mean": 0.0037931491557635943
+        },
+        "w/o Param Library": {
+          "time_mean": 0.02834622859954834,
+          "time_std": 0.00048610242637227774,
+          "quality_mean": 0.38589199999999996,
+          "accuracy_mean": 0.004031108607860697
+        }
+      }
+    }
+  },
+  "sensitivity": {
+    "parameter_ranges": {
+      "alpha": [
+        0.5,
+        0.75,
+        1.0,
+        1.25,
+        1.5
+      ],
+      "beta": [
+        0.25,
+        0.375,
+        0.5,
+        0.625,
+        0.75
+      ],
+      "gamma": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5
+      ]
+    },
+    "by_group": {
+      "G1_SinglePhase_Cu": {
+        "alpha": [
+          {
+            "param_value": 0.5,
+            "n_models": 2.0,
+            "time_mean": 0.0010589599609375,
+            "quality_mean": 0.39875000000000005,
+            "accuracy_mean": 0.0043560078156371414
+          },
+          {
+            "param_value": 0.75,
+            "n_models": 2.0,
+            "time_mean": 0.0010428905487060546,
+            "quality_mean": 0.39909000000000006,
+            "accuracy_mean": 0.003868707118865955
+          },
+          {
+            "param_value": 1.0,
+            "n_models": 2.0,
+            "time_mean": 0.0012375831604003907,
+            "quality_mean": 0.39956,
+            "accuracy_mean": 0.00346669803790165
+          },
+          {
+            "param_value": 1.25,
+            "n_models": 2.0,
+            "time_mean": 0.0010491371154785155,
+            "quality_mean": 0.39964,
+            "accuracy_mean": 0.004352577299697258
+          },
+          {
+            "param_value": 1.5,
+            "n_models": 3.0,
+            "time_mean": 0.0013907909393310546,
+            "quality_mean": 0.3903333333333333,
+            "accuracy_mean": 0.00321604931414452
+          }
+        ],
+        "beta": [
+          {
+            "param_value": 0.25,
+            "n_models": 2.0,
+            "time_mean": 0.0010477542877197266,
+            "quality_mean": 0.39954999999999996,
+            "accuracy_mean": 0.003078237745414214
+          },
+          {
+            "param_value": 0.375,
+            "n_models": 2.0,
+            "time_mean": 0.0010483264923095703,
+            "quality_mean": 0.39923000000000003,
+            "accuracy_mean": 0.004072817620006219
+          },
+          {
+            "param_value": 0.5,
+            "n_models": 2.0,
+            "time_mean": 0.001182699203491211,
+            "quality_mean": 0.39998999999999996,
+            "accuracy_mean": 0.004738654248053598
+          },
+          {
+            "param_value": 0.625,
+            "n_models": 2.0,
+            "time_mean": 0.0010267734527587891,
+            "quality_mean": 0.39904,
+            "accuracy_mean": 0.0046097089880106305
+          },
+          {
+            "param_value": 0.75,
+            "n_models": 2.0,
+            "time_mean": 0.0010509967803955078,
+            "quality_mean": 0.39934,
+            "accuracy_mean": 0.004080608995712642
+          }
+        ],
+        "gamma": [
+          {
+            "param_value": 0.1,
+            "n_models": 2.0,
+            "time_mean": 0.0010385513305664062,
+            "quality_mean": 0.39958,
+            "accuracy_mean": 0.0058995262715539785
+          },
+          {
+            "param_value": 0.2,
+            "n_models": 2.0,
+            "time_mean": 0.0010292530059814453,
+            "quality_mean": 0.3998,
+            "accuracy_mean": 0.0038297088821698023
+          },
+          {
+            "param_value": 0.3,
+            "n_models": 2.0,
+            "time_mean": 0.001150798797607422,
+            "quality_mean": 0.39961,
+            "accuracy_mean": 0.004232795355011876
+          },
+          {
+            "param_value": 0.4,
+            "n_models": 2.0,
+            "time_mean": 0.0011416912078857423,
+            "quality_mean": 0.39882999999999996,
+            "accuracy_mean": 0.003483942326842815
+          },
+          {
+            "param_value": 0.5,
+            "n_models": 2.0,
+            "time_mean": 0.0010732173919677734,
+            "quality_mean": 0.39958,
+            "accuracy_mean": 0.0038348447291754904
+          }
+        ]
+      },
+      "G2_DualPhase_DPSteel": {
+        "alpha": [
+          {
+            "param_value": 0.5,
+            "n_models": 3.0,
+            "time_mean": 1.492705774307251,
+            "quality_mean": 0.3913666666666667,
+            "accuracy_mean": 0.0044289129748495346
+          },
+          {
+            "param_value": 0.75,
+            "n_models": 3.0,
+            "time_mean": 1.5138391971588134,
+            "quality_mean": 0.3907933333333333,
+            "accuracy_mean": 0.004378453757658303
+          },
+          {
+            "param_value": 1.0,
+            "n_models": 4.0,
+            "time_mean": 1.9240654468536378,
+            "quality_mean": 0.38766999999999996,
+            "accuracy_mean": 0.0027254455709683823
+          },
+          {
+            "param_value": 1.25,
+            "n_models": 4.0,
+            "time_mean": 1.941040325164795,
+            "quality_mean": 0.38764000000000004,
+            "accuracy_mean": 0.00395255058278683
+          },
+          {
+            "param_value": 1.5,
+            "n_models": 5.0,
+            "time_mean": 2.3326704025268556,
+            "quality_mean": 0.38644799999999996,
+            "accuracy_mean": 0.0034558645796134804
+          }
+        ],
+        "beta": [
+          {
+            "param_value": 0.25,
+            "n_models": 3.0,
+            "time_mean": 1.5304564476013183,
+            "quality_mean": 0.3901,
+            "accuracy_mean": 0.004147992365264855
+          },
+          {
+            "param_value": 0.375,
+            "n_models": 3.0,
+            "time_mean": 1.5140113353729248,
+            "quality_mean": 0.38949333333333336,
+            "accuracy_mean": 0.004339487614469787
+          },
+          {
+            "param_value": 0.5,
+            "n_models": 4.0,
+            "time_mean": 1.9421867847442627,
+            "quality_mean": 0.38739,
+            "accuracy_mean": 0.004545660743594708
+          },
+          {
+            "param_value": 0.625,
+            "n_models": 4.0,
+            "time_mean": 1.9222453117370606,
+            "quality_mean": 0.387345,
+            "accuracy_mean": 0.004653307038193538
+          },
+          {
+            "param_value": 0.75,
+            "n_models": 4.0,
+            "time_mean": 1.941201114654541,
+            "quality_mean": 0.38797499999999996,
+            "accuracy_mean": 0.004027666779359966
+          }
+        ],
+        "gamma": [
+          {
+            "param_value": 0.1,
+            "n_models": 4.0,
+            "time_mean": 1.935902976989746,
+            "quality_mean": 0.38688,
+            "accuracy_mean": 0.003507393251275062
+          },
+          {
+            "param_value": 0.2,
+            "n_models": 4.0,
+            "time_mean": 1.9370370388031006,
+            "quality_mean": 0.3876,
+            "accuracy_mean": 0.003872153254644256
+          },
+          {
+            "param_value": 0.3,
+            "n_models": 4.0,
+            "time_mean": 1.9298412322998046,
+            "quality_mean": 0.38744999999999996,
+            "accuracy_mean": 0.003901561769097116
+          },
+          {
+            "param_value": 0.4,
+            "n_models": 4.0,
+            "time_mean": 1.9398078441619873,
+            "quality_mean": 0.388145,
+            "accuracy_mean": 0.003789213087982618
+          },
+          {
+            "param_value": 0.5,
+            "n_models": 4.0,
+            "time_mean": 1.9250003814697265,
+            "quality_mean": 0.387645,
+            "accuracy_mean": 0.004090192540154955
+          }
+        ]
+      },
+      "G3_MultiPhase_Alloy": {
+        "alpha": [
+          {
+            "param_value": 0.5,
+            "n_models": 4.0,
+            "time_mean": 0.010684061050415038,
+            "quality_mean": 0.38714,
+            "accuracy_mean": 0.005167249353346769
+          },
+          {
+            "param_value": 0.75,
+            "n_models": 4.0,
+            "time_mean": 0.01065049171447754,
+            "quality_mean": 0.38759499999999997,
+            "accuracy_mean": 0.004452465990847162
+          },
+          {
+            "param_value": 1.0,
+            "n_models": 5.0,
+            "time_mean": 0.012677240371704101,
+            "quality_mean": 0.38627999999999996,
+            "accuracy_mean": 0.004425884731319532
+          },
+          {
+            "param_value": 1.25,
+            "n_models": 6.0,
+            "time_mean": 0.014871978759765625,
+            "quality_mean": 0.38546,
+            "accuracy_mean": 0.003970938126872541
+          },
+          {
+            "param_value": 1.5,
+            "n_models": 7.0,
+            "time_mean": 0.017174339294433592,
+            "quality_mean": 0.3838914285714286,
+            "accuracy_mean": 0.003987276601585886
+          }
+        ],
+        "beta": [
+          {
+            "param_value": 0.25,
+            "n_models": 4.0,
+            "time_mean": 0.010520315170288086,
+            "quality_mean": 0.386815,
+            "accuracy_mean": 0.0031329371441000536
+          },
+          {
+            "param_value": 0.375,
+            "n_models": 5.0,
+            "time_mean": 0.012849235534667968,
+            "quality_mean": 0.385912,
+            "accuracy_mean": 0.003776570125471316
+          },
+          {
+            "param_value": 0.5,
+            "n_models": 5.0,
+            "time_mean": 0.012969303131103515,
+            "quality_mean": 0.385524,
+            "accuracy_mean": 0.003992528873225573
+          },
+          {
+            "param_value": 0.625,
+            "n_models": 5.0,
+            "time_mean": 0.013024997711181641,
+            "quality_mean": 0.38592400000000004,
+            "accuracy_mean": 0.004167096668710558
+          },
+          {
+            "param_value": 0.75,
+            "n_models": 6.0,
+            "time_mean": 0.014924144744873047,
+            "quality_mean": 0.38515333333333335,
+            "accuracy_mean": 0.0037244949983713136
+          }
+        ],
+        "gamma": [
+          {
+            "param_value": 0.1,
+            "n_models": 5.0,
+            "time_mean": 0.012722396850585937,
+            "quality_mean": 0.38586400000000004,
+            "accuracy_mean": 0.004029612164350186
+          },
+          {
+            "param_value": 0.2,
+            "n_models": 5.0,
+            "time_mean": 0.01273517608642578,
+            "quality_mean": 0.38608000000000003,
+            "accuracy_mean": 0.0037711194391325206
+          },
+          {
+            "param_value": 0.3,
+            "n_models": 5.0,
+            "time_mean": 0.013074922561645507,
+            "quality_mean": 0.386448,
+            "accuracy_mean": 0.0042394621308481425
+          },
+          {
+            "param_value": 0.4,
+            "n_models": 5.0,
+            "time_mean": 0.012892055511474609,
+            "quality_mean": 0.385724,
+            "accuracy_mean": 0.0037042681984106006
+          },
+          {
+            "param_value": 0.5,
+            "n_models": 5.0,
+            "time_mean": 0.012902927398681641,
+            "quality_mean": 0.386092,
+            "accuracy_mean": 0.0041837293659672346
+          }
+        ]
+      },
+      "G4_VariableGrainSize_Ni": {
+        "alpha": [
+          {
+            "param_value": 0.5,
+            "n_models": 2.0,
+            "time_mean": 0.0003315925598144531,
+            "quality_mean": 0.39977999999999997,
+            "accuracy_mean": 0.003891465369532354
+          },
+          {
+            "param_value": 0.75,
+            "n_models": 2.0,
+            "time_mean": 0.000315093994140625,
+            "quality_mean": 0.39910999999999996,
+            "accuracy_mean": 0.005489553294895211
+          },
+          {
+            "param_value": 1.0,
+            "n_models": 2.0,
+            "time_mean": 0.0003151893615722656,
+            "quality_mean": 0.39740000000000003,
+            "accuracy_mean": 0.003821518479501673
+          },
+          {
+            "param_value": 1.25,
+            "n_models": 2.0,
+            "time_mean": 0.000313568115234375,
+            "quality_mean": 0.39889,
+            "accuracy_mean": 0.005784466349860495
+          },
+          {
+            "param_value": 1.5,
+            "n_models": 3.0,
+            "time_mean": 0.0004093170166015625,
+            "quality_mean": 0.38978,
+            "accuracy_mean": 0.003597625435196994
+          }
+        ],
+        "beta": [
+          {
+            "param_value": 0.25,
+            "n_models": 2.0,
+            "time_mean": 0.0003147125244140625,
+            "quality_mean": 0.39944999999999997,
+            "accuracy_mean": 0.004653623989977429
+          },
+          {
+            "param_value": 0.375,
+            "n_models": 2.0,
+            "time_mean": 0.00045838356018066404,
+            "quality_mean": 0.39859999999999995,
+            "accuracy_mean": 0.003519748256153665
+          },
+          {
+            "param_value": 0.5,
+            "n_models": 2.0,
+            "time_mean": 0.0003869056701660156,
+            "quality_mean": 0.39843,
+            "accuracy_mean": 0.0041104525356625565
+          },
+          {
+            "param_value": 0.625,
+            "n_models": 2.0,
+            "time_mean": 0.0003275871276855469,
+            "quality_mean": 0.39961,
+            "accuracy_mean": 0.003018431586639925
+          },
+          {
+            "param_value": 0.75,
+            "n_models": 2.0,
+            "time_mean": 0.0003218650817871094,
+            "quality_mean": 0.39881,
+            "accuracy_mean": 0.004312556214199093
+          }
+        ],
+        "gamma": [
+          {
+            "param_value": 0.1,
+            "n_models": 2.0,
+            "time_mean": 0.0003207683563232422,
+            "quality_mean": 0.39909999999999995,
+            "accuracy_mean": 0.0034162130025114255
+          },
+          {
+            "param_value": 0.2,
+            "n_models": 2.0,
+            "time_mean": 0.0003232479095458984,
+            "quality_mean": 0.39836,
+            "accuracy_mean": 0.0035010229468381616
+          },
+          {
+            "param_value": 0.3,
+            "n_models": 2.0,
+            "time_mean": 0.0003223896026611328,
+            "quality_mean": 0.39915,
+            "accuracy_mean": 0.005094292434452552
+          },
+          {
+            "param_value": 0.4,
+            "n_models": 2.0,
+            "time_mean": 0.0003215789794921875,
+            "quality_mean": 0.39828,
+            "accuracy_mean": 0.0038329101613449935
+          },
+          {
+            "param_value": 0.5,
+            "n_models": 2.0,
+            "time_mean": 0.0003943920135498047,
+            "quality_mean": 0.39901,
+            "accuracy_mean": 0.005728677687581796
+          }
+        ]
+      },
+      "G5_MultiComponent_Steel": {
+        "alpha": [
+          {
+            "param_value": 0.5,
+            "n_models": 5.0,
+            "time_mean": 0.48751397132873536,
+            "quality_mean": 0.38639999999999997,
+            "accuracy_mean": 0.0038133624812143802
+          },
+          {
+            "param_value": 0.75,
+            "n_models": 6.0,
+            "time_mean": 0.5757276535034179,
+            "quality_mean": 0.3852966666666666,
+            "accuracy_mean": 0.003931008108938086
+          },
+          {
+            "param_value": 1.0,
+            "n_models": 7.0,
+            "time_mean": 0.6559367179870605,
+            "quality_mean": 0.38472285714285726,
+            "accuracy_mean": 0.003924409993391473
+          },
+          {
+            "param_value": 1.25,
+            "n_models": 8.0,
+            "time_mean": 0.7568957328796386,
+            "quality_mean": 0.38393749999999993,
+            "accuracy_mean": 0.003990506365978283
+          },
+          {
+            "param_value": 1.5,
+            "n_models": 9.0,
+            "time_mean": 0.8359510898590088,
+            "quality_mean": 0.38352,
+            "accuracy_mean": 0.0037811358450448307
+          }
+        ],
+        "beta": [
+          {
+            "param_value": 0.25,
+            "n_models": 6.0,
+            "time_mean": 0.5846406936645507,
+            "quality_mean": 0.38606000000000007,
+            "accuracy_mean": 0.0035682102028682466
+          },
+          {
+            "param_value": 0.375,
+            "n_models": 6.0,
+            "time_mean": 0.582871675491333,
+            "quality_mean": 0.3844566666666666,
+            "accuracy_mean": 0.0037830082679855916
+          },
+          {
+            "param_value": 0.5,
+            "n_models": 7.0,
+            "time_mean": 0.6648312568664551,
+            "quality_mean": 0.3848485714285714,
+            "accuracy_mean": 0.004043761518757722
+          },
+          {
+            "param_value": 0.625,
+            "n_models": 7.0,
+            "time_mean": 0.6674556732177734,
+            "quality_mean": 0.38497142857142863,
+            "accuracy_mean": 0.004187779666841444
+          },
+          {
+            "param_value": 0.75,
+            "n_models": 8.0,
+            "time_mean": 0.7462069511413574,
+            "quality_mean": 0.38378500000000004,
+            "accuracy_mean": 0.004025466320794877
+          }
+        ],
+        "gamma": [
+          {
+            "param_value": 0.1,
+            "n_models": 7.0,
+            "time_mean": 0.6597679615020752,
+            "quality_mean": 0.38464857142857134,
+            "accuracy_mean": 0.004059326663721565
+          },
+          {
+            "param_value": 0.2,
+            "n_models": 7.0,
+            "time_mean": 0.6631969451904297,
+            "quality_mean": 0.38391999999999993,
+            "accuracy_mean": 0.004159717556360914
+          },
+          {
+            "param_value": 0.3,
+            "n_models": 7.0,
+            "time_mean": 0.6698942184448242,
+            "quality_mean": 0.3840057142857143,
+            "accuracy_mean": 0.0041240419012333555
+          },
+          {
+            "param_value": 0.4,
+            "n_models": 7.0,
+            "time_mean": 0.6732076168060303,
+            "quality_mean": 0.38444857142857136,
+            "accuracy_mean": 0.0038723722340623526
+          },
+          {
+            "param_value": 0.5,
+            "n_models": 7.0,
+            "time_mean": 1.0379248142242432,
+            "quality_mean": 0.3845885714285714,
+            "accuracy_mean": 0.003929671810826487
+          }
+        ]
+      }
+    }
+  },
+  "statistics": {
+    "G1_SinglePhase_Cu": {
+      "grain_size_distribution": {
+        "mean": 29.948918918918924,
+        "std": 7.820154758883313,
+        "cv": 0.2611164289453958,
+        "log_mean": 3.3658941358805694,
+        "log_std": 0.2606489100366801,
+        "ks_statistic": 0.15001116310748908,
+        "ks_pvalue": 0.0642698653942343,
+        "num_grains_total": 74
+      },
+      "orientation_uniformity": {
+        "phi1_ks": 0.10242537765804421,
+        "phi1_pvalue": 0.39284725003703147,
+        "Phi_ks": 0.08089674923775719,
+        "Phi_pvalue": 0.6874795969857539,
+        "num_orientations": 74
+      },
+      "convergence": [
+        {
+          "rve_size": 40.0,
+          "num_grains": 74,
+          "num_elements": 8991000,
+          "phase_volumes": {
+            "copper_fcc": 1.0
+          },
+          "phase_accuracy": 0.0026960270860094115,
+          "mesh_quality": 0.3983
+        },
+        {
+          "rve_size": 60.0,
+          "num_grains": 74,
+          "num_elements": 8991000,
+          "phase_volumes": {
+            "copper_fcc": 1.0
+          },
+          "phase_accuracy": 0.003470712458372327,
+          "mesh_quality": 0.39905
+        },
+        {
+          "rve_size": 80.0,
+          "num_grains": 74,
+          "num_elements": 8991000,
+          "phase_volumes": {
+            "copper_fcc": 1.0
+          },
+          "phase_accuracy": 0.002056959700025063,
+          "mesh_quality": 0.3994
+        },
+        {
+          "rve_size": 100.0,
+          "num_grains": 74,
+          "num_elements": 8991000,
+          "phase_volumes": {
+            "copper_fcc": 1.0
+          },
+          "phase_accuracy": 0.00701760556084674,
+          "mesh_quality": 0.4007
+        },
+        {
+          "rve_size": 150.0,
+          "num_grains": 74,
+          "num_elements": 8991000,
+          "phase_volumes": {
+            "copper_fcc": 1.0
+          },
+          "phase_accuracy": 0.004024547522871069,
+          "mesh_quality": 0.3994
+        },
+        {
+          "rve_size": 200.0,
+          "num_grains": 74,
+          "num_elements": 8991000,
+          "phase_volumes": {
+            "copper_fcc": 1.0
+          },
+          "phase_accuracy": 0.0032258041102594115,
+          "mesh_quality": 0.40125
+        }
+      ]
+    },
+    "G2_DualPhase_DPSteel": {
+      "grain_size_distribution": {
+        "mean": 3.1905986660595183,
+        "std": 1.373465764068499,
+        "cv": 0.43047274440340977,
+        "log_mean": 1.1105485846546237,
+        "log_std": 0.28857564047858775,
+        "ks_statistic": 0.04168333231138144,
+        "ks_pvalue": 6.828050217732077e-226,
+        "num_grains_total": 149332
+      },
+      "orientation_uniformity": {
+        "phi1_ks": 0.005953916956909278,
+        "phi1_pvalue": 5.0261665244051705e-05,
+        "Phi_ks": 0.002982750181286145,
+        "Phi_pvalue": 0.13996830819810324,
+        "num_orientations": 149332
+      },
+      "convergence": [
+        {
+          "rve_size": 40.0,
+          "num_grains": 149332,
+          "num_elements": 28122775,
+          "phase_volumes": {
+            "ferrite": 0.72,
+            "martensite": 0.28
+          },
+          "phase_accuracy": 0.004037930025069282,
+          "mesh_quality": 0.38885000000000003
+        },
+        {
+          "rve_size": 60.0,
+          "num_grains": 149332,
+          "num_elements": 28122775,
+          "phase_volumes": {
+            "ferrite": 0.72,
+            "martensite": 0.28
+          },
+          "phase_accuracy": 0.003793349759362588,
+          "mesh_quality": 0.38837499999999997
+        },
+        {
+          "rve_size": 80.0,
+          "num_grains": 149332,
+          "num_elements": 28122775,
+          "phase_volumes": {
+            "ferrite": 0.72,
+            "martensite": 0.28
+          },
+          "phase_accuracy": 0.002855832379656774,
+          "mesh_quality": 0.38760000000000006
+        },
+        {
+          "rve_size": 100.0,
+          "num_grains": 149332,
+          "num_elements": 28122775,
+          "phase_volumes": {
+            "ferrite": 0.72,
+            "martensite": 0.28
+          },
+          "phase_accuracy": 0.0022077222529564913,
+          "mesh_quality": 0.38787499999999997
+        },
+        {
+          "rve_size": 150.0,
+          "num_grains": 149332,
+          "num_elements": 28122775,
+          "phase_volumes": {
+            "ferrite": 0.72,
+            "martensite": 0.28
+          },
+          "phase_accuracy": 0.004206062794785005,
+          "mesh_quality": 0.38780000000000003
+        },
+        {
+          "rve_size": 200.0,
+          "num_grains": 149332,
+          "num_elements": 28122775,
+          "phase_volumes": {
+            "ferrite": 0.72,
+            "martensite": 0.28
+          },
+          "phase_accuracy": 0.004112809840164766,
+          "mesh_quality": 0.38715
+        }
+      ]
+    },
+    "G3_MultiPhase_Alloy": {
+      "grain_size_distribution": {
+        "mean": 23.284646017699117,
+        "std": 7.037138906525916,
+        "cv": 0.3022222842115293,
+        "log_mean": 3.103694083270724,
+        "log_std": 0.29700160757507066,
+        "ks_statistic": 0.02721809823569976,
+        "ks_pvalue": 0.3658801946557523,
+        "num_grains_total": 1130
+      },
+      "orientation_uniformity": {
+        "phi1_ks": 0.030703983200555895,
+        "phi1_pvalue": 0.23235179534504402,
+        "Phi_ks": 0.09160950139862561,
+        "Phi_pvalue": 1.0557115981542808e-08,
+        "num_orientations": 1130
+      },
+      "convergence": [
+        {
+          "rve_size": 40.0,
+          "num_grains": 1130,
+          "num_elements": 50860030,
+          "phase_volumes": {
+            "ferrite": 0.4,
+            "alpha_titanium": 0.25,
+            "austenite": 0.35
+          },
+          "phase_accuracy": 0.0030815050996038113,
+          "mesh_quality": 0.38477999999999996
+        },
+        {
+          "rve_size": 60.0,
+          "num_grains": 1130,
+          "num_elements": 50860030,
+          "phase_volumes": {
+            "ferrite": 0.4,
+            "alpha_titanium": 0.25,
+            "austenite": 0.35
+          },
+          "phase_accuracy": 0.00382132898714785,
+          "mesh_quality": 0.38618
+        },
+        {
+          "rve_size": 80.0,
+          "num_grains": 1130,
+          "num_elements": 50860030,
+          "phase_volumes": {
+            "ferrite": 0.4,
+            "alpha_titanium": 0.25,
+            "austenite": 0.35
+          },
+          "phase_accuracy": 0.003823640242473699,
+          "mesh_quality": 0.38642
+        },
+        {
+          "rve_size": 100.0,
+          "num_grains": 1130,
+          "num_elements": 50860030,
+          "phase_volumes": {
+            "ferrite": 0.4,
+            "alpha_titanium": 0.25,
+            "austenite": 0.35
+          },
+          "phase_accuracy": 0.0044403036545124395,
+          "mesh_quality": 0.38688
+        },
+        {
+          "rve_size": 150.0,
+          "num_grains": 1130,
+          "num_elements": 50860030,
+          "phase_volumes": {
+            "ferrite": 0.4,
+            "alpha_titanium": 0.25,
+            "austenite": 0.35
+          },
+          "phase_accuracy": 0.0035631593422753034,
+          "mesh_quality": 0.38439999999999996
+        },
+        {
+          "rve_size": 200.0,
+          "num_grains": 1130,
+          "num_elements": 50860030,
+          "phase_volumes": {
+            "ferrite": 0.4,
+            "alpha_titanium": 0.25,
+            "austenite": 0.35
+          },
+          "phase_accuracy": 0.004352041783611238,
+          "mesh_quality": 0.38574
+        }
+      ]
+    },
+    "G4_VariableGrainSize_Ni": {
+      "grain_size_distribution": {
+        "mean": 88.607,
+        "std": 38.269524441780035,
+        "cv": 0.43190181861229965,
+        "log_mean": 4.391393116396071,
+        "log_std": 0.43170099826255565,
+        "ks_statistic": 0.16290028815668622,
+        "ks_pvalue": 0.6065025308094718,
+        "num_grains_total": 20
+      },
+      "orientation_uniformity": {
+        "phi1_ks": 0.32644448381365027,
+        "phi1_pvalue": 0.0212795048202854,
+        "Phi_ks": 0.47179301479089025,
+        "Phi_pvalue": 0.00013172301826644878,
+        "num_orientations": 20
+      },
+      "convergence": [
+        {
+          "rve_size": 40.0,
+          "num_grains": 20,
+          "num_elements": 46080000,
+          "phase_volumes": {
+            "nickel_fcc": 1.0
+          },
+          "phase_accuracy": 0.0029724613834731795,
+          "mesh_quality": 0.39645
+        },
+        {
+          "rve_size": 60.0,
+          "num_grains": 20,
+          "num_elements": 46080000,
+          "phase_volumes": {
+            "nickel_fcc": 1.0
+          },
+          "phase_accuracy": 0.002264759978296227,
+          "mesh_quality": 0.3967
+        },
+        {
+          "rve_size": 80.0,
+          "num_grains": 20,
+          "num_elements": 46080000,
+          "phase_volumes": {
+            "nickel_fcc": 1.0
+          },
+          "phase_accuracy": 0.003085842810625683,
+          "mesh_quality": 0.40045000000000003
+        },
+        {
+          "rve_size": 100.0,
+          "num_grains": 20,
+          "num_elements": 46080000,
+          "phase_volumes": {
+            "nickel_fcc": 1.0
+          },
+          "phase_accuracy": 0.0030586047614756806,
+          "mesh_quality": 0.40099999999999997
+        },
+        {
+          "rve_size": 150.0,
+          "num_grains": 20,
+          "num_elements": 46080000,
+          "phase_volumes": {
+            "nickel_fcc": 1.0
+          },
+          "phase_accuracy": 0.003965690361285801,
+          "mesh_quality": 0.40054999999999996
+        },
+        {
+          "rve_size": 200.0,
+          "num_grains": 20,
+          "num_elements": 46080000,
+          "phase_volumes": {
+            "nickel_fcc": 1.0
+          },
+          "phase_accuracy": 0.003107063390288989,
+          "mesh_quality": 0.3979
+        }
+      ]
+    },
+    "G5_MultiComponent_Steel": {
+      "grain_size_distribution": {
+        "mean": 6.115866635138331,
+        "std": 3.8844042399155096,
+        "cv": 0.6351355370632032,
+        "log_mean": 1.6805888539546807,
+        "log_std": 0.4805231574523141,
+        "ks_statistic": 0.04825688576000964,
+        "ks_pvalue": 2.9449704680259536e-120,
+        "num_grains_total": 59206
+      },
+      "orientation_uniformity": {
+        "phi1_ks": 0.009206409309390096,
+        "phi1_pvalue": 8.700865356384123e-05,
+        "Phi_ks": 0.007327620117255851,
+        "Phi_pvalue": 0.003448534686138019,
+        "num_orientations": 59206
+      },
+      "convergence": [
+        {
+          "rve_size": 40.0,
+          "num_grains": 59206,
+          "num_elements": 91194822,
+          "phase_volumes": {
+            "ferrite": 0.5,
+            "pearlite": 0.25,
+            "austenite": 0.1,
+            "martensite": 0.15
+          },
+          "phase_accuracy": 0.0038983443190951502,
+          "mesh_quality": 0.3841428571428572
+        },
+        {
+          "rve_size": 60.0,
+          "num_grains": 59206,
+          "num_elements": 91194822,
+          "phase_volumes": {
+            "ferrite": 0.5,
+            "pearlite": 0.25,
+            "austenite": 0.1,
+            "martensite": 0.15
+          },
+          "phase_accuracy": 0.004336993657571692,
+          "mesh_quality": 0.3841
+        },
+        {
+          "rve_size": 80.0,
+          "num_grains": 59206,
+          "num_elements": 91194822,
+          "phase_volumes": {
+            "ferrite": 0.5,
+            "pearlite": 0.25,
+            "austenite": 0.1,
+            "martensite": 0.15
+          },
+          "phase_accuracy": 0.004972657441252608,
+          "mesh_quality": 0.3832571428571429
+        },
+        {
+          "rve_size": 100.0,
+          "num_grains": 59206,
+          "num_elements": 91194822,
+          "phase_volumes": {
+            "ferrite": 0.5,
+            "pearlite": 0.25,
+            "austenite": 0.1,
+            "martensite": 0.15
+          },
+          "phase_accuracy": 0.00454541537541273,
+          "mesh_quality": 0.3838
+        },
+        {
+          "rve_size": 150.0,
+          "num_grains": 59206,
+          "num_elements": 91194822,
+          "phase_volumes": {
+            "ferrite": 0.5,
+            "pearlite": 0.25,
+            "austenite": 0.1,
+            "martensite": 0.15
+          },
+          "phase_accuracy": 0.0035318452589640343,
+          "mesh_quality": 0.3827714285714286
+        },
+        {
+          "rve_size": 200.0,
+          "num_grains": 59206,
+          "num_elements": 91194822,
+          "phase_volumes": {
+            "ferrite": 0.5,
+            "pearlite": 0.25,
+            "austenite": 0.1,
+            "martensite": 0.15
+          },
+          "phase_accuracy": 0.0034882204949042497,
+          "mesh_quality": 0.3839
+        }
+      ]
+    }
+  },
+  "reproducibility": {
+    "G1_SinglePhase_Cu": {
+      "fixed_seed_deterministic": false,
+      "max_deviation_fixed_seed": 0.0014785485838245444,
+      "fixed_seed_results": {
+        "pipeline_time": 0.003079652786254883,
+        "num_rve_models": 2,
+        "total_grains": 74,
+        "total_elements": 8991000,
+        "mesh_quality_avg": 0.39785000000000004,
+        "phase_accuracy": 0.0036109253921216,
+        "num_phases": 1
+      },
+      "cross_seed_quality_cv": 0.0013842372499887233,
+      "cross_seed_accuracy_cv": 0.2718418262399972,
+      "seed_results": {
+        "42": {
+          "time_mean": 0.0037223339080810548,
+          "time_std": 0.0007163081151909732,
+          "quality_mean": 0.39911,
+          "quality_std": 0.0008610458756651689,
+          "accuracy_mean": 0.002241512319176675,
+          "accuracy_std": 0.0007777691047421026,
+          "grain_count_mean": 74.0
+        },
+        "123": {
+          "time_mean": 0.003021430969238281,
+          "time_std": 0.0001550804199617133,
+          "quality_mean": 0.40002000000000004,
+          "quality_std": 0.0005653317610041129,
+          "accuracy_mean": 0.0031607886856696576,
+          "accuracy_std": 0.0012353335659008465,
+          "grain_count_mean": 74.0
+        },
+        "456": {
+          "time_mean": 0.003120231628417969,
+          "time_std": 0.00027517096187458235,
+          "quality_mean": 0.39898,
+          "quality_std": 0.0008423775875461184,
+          "accuracy_mean": 0.0025334686002223663,
+          "accuracy_std": 0.000925581677599664,
+          "grain_count_mean": 74.0
+        },
+        "789": {
+          "time_mean": 0.0030085086822509766,
+          "time_std": 0.00018831111395863423,
+          "quality_mean": 0.39864,
+          "quality_std": 0.0009536246641105874,
+          "accuracy_mean": 0.002841279528002194,
+          "accuracy_std": 0.002017498355178988,
+          "grain_count_mean": 74.0
+        },
+        "1024": {
+          "time_mean": 0.003466367721557617,
+          "time_std": 0.001117074565349991,
+          "quality_mean": 0.39841,
+          "quality_std": 0.000495378643060021,
+          "accuracy_mean": 0.00464528996577237,
+          "accuracy_std": 0.0016654010797199923,
+          "grain_count_mean": 74.0
+        }
+      }
+    },
+    "G2_DualPhase_DPSteel": {
+      "fixed_seed_deterministic": false,
+      "max_deviation_fixed_seed": 0.1158881511919508,
+      "fixed_seed_results": {
+        "pipeline_time": 5.683501720428467,
+        "num_rve_models": 4,
+        "total_grains": 149332,
+        "total_elements": 28122775,
+        "mesh_quality_avg": 0.38734999999999997,
+        "phase_accuracy": 0.0038094590872256653,
+        "num_phases": 2
+      },
+      "cross_seed_quality_cv": 0.0002538115993030278,
+      "cross_seed_accuracy_cv": 0.07628279535082996,
+      "seed_results": {
+        "42": {
+          "time_mean": 5.826650333404541,
+          "time_std": 0.1354323626501197,
+          "quality_mean": 0.38773,
+          "quality_std": 0.0011418625136153935,
+          "accuracy_mean": 0.004349614738974316,
+          "accuracy_std": 0.00044012311745798767,
+          "grain_count_mean": 149332.0
+        },
+        "123": {
+          "time_mean": 5.929158067703247,
+          "time_std": 0.07749448522868507,
+          "quality_mean": 0.38794,
+          "quality_std": 0.0011811646794583745,
+          "accuracy_mean": 0.004738880734544993,
+          "accuracy_std": 0.0003968081024607794,
+          "grain_count_mean": 149332.0
+        },
+        "456": {
+          "time_mean": 5.880065011978149,
+          "time_std": 0.15503733641510212,
+          "quality_mean": 0.387765,
+          "quality_std": 0.0006262188115986466,
+          "accuracy_mean": 0.004503654317549807,
+          "accuracy_std": 0.0014893370629387006,
+          "grain_count_mean": 149332.0
+        },
+        "789": {
+          "time_mean": 5.852860736846924,
+          "time_std": 0.09032578271803875,
+          "quality_mean": 0.38770499999999997,
+          "quality_std": 0.0011246555028096145,
+          "accuracy_mean": 0.0043788191147272155,
+          "accuracy_std": 0.0009660343997933952,
+          "grain_count_mean": 149332.0
+        },
+        "1024": {
+          "time_mean": 5.802429580688477,
+          "time_std": 0.0678136162147935,
+          "quality_mean": 0.38765,
+          "quality_std": 0.0008567379996241272,
+          "accuracy_mean": 0.003739109465594158,
+          "accuracy_std": 0.0010912305989400728,
+          "grain_count_mean": 149332.0
+        }
+      }
+    },
+    "G3_MultiPhase_Alloy": {
+      "fixed_seed_deterministic": false,
+      "max_deviation_fixed_seed": 0.0015574088732697058,
+      "fixed_seed_results": {
+        "pipeline_time": 0.03711652755737305,
+        "num_rve_models": 5,
+        "total_grains": 1130,
+        "total_elements": 50860030,
+        "mesh_quality_avg": 0.38638,
+        "phase_accuracy": 0.0046853507023884525,
+        "num_phases": 3
+      },
+      "cross_seed_quality_cv": 0.0007518903588808678,
+      "cross_seed_accuracy_cv": 0.10217329827982943,
+      "seed_results": {
+        "42": {
+          "time_mean": 0.04173684120178223,
+          "time_std": 0.005978236634805364,
+          "quality_mean": 0.38536400000000004,
+          "quality_std": 0.0008033330567081094,
+          "accuracy_mean": 0.003989022359080156,
+          "accuracy_std": 0.0005100663978916312,
+          "grain_count_mean": 1130.0
+        },
+        "123": {
+          "time_mean": 0.047205781936645506,
+          "time_std": 0.009773612171260661,
+          "quality_mean": 0.38536800000000004,
+          "quality_std": 0.0008040497497045956,
+          "accuracy_mean": 0.004860341682121437,
+          "accuracy_std": 0.0012394518972424482,
+          "grain_count_mean": 1130.0
+        },
+        "456": {
+          "time_mean": 0.040195369720458986,
+          "time_std": 0.003909571897458075,
+          "quality_mean": 0.38557600000000003,
+          "quality_std": 0.0006193415858797237,
+          "accuracy_mean": 0.0038792707197257046,
+          "accuracy_std": 0.0007572395747234543,
+          "grain_count_mean": 1130.0
+        },
+        "789": {
+          "time_mean": 0.04102339744567871,
+          "time_std": 0.00394424015456068,
+          "quality_mean": 0.386132,
+          "quality_std": 0.0009367689149411388,
+          "accuracy_mean": 0.0040937767937494094,
+          "accuracy_std": 0.001016727636695909,
+          "grain_count_mean": 1130.0
+        },
+        "1024": {
+          "time_mean": 0.03903994560241699,
+          "time_std": 0.0022876308688603987,
+          "quality_mean": 0.38579600000000003,
+          "quality_std": 0.001089836685012929,
+          "accuracy_mean": 0.0036165126198503803,
+          "accuracy_std": 0.00029900932374381673,
+          "grain_count_mean": 1130.0
+        }
+      }
+    },
+    "G4_VariableGrainSize_Ni": {
+      "fixed_seed_deterministic": false,
+      "max_deviation_fixed_seed": 0.003188842740190369,
+      "fixed_seed_results": {
+        "pipeline_time": 0.0009355545043945312,
+        "num_rve_models": 2,
+        "total_grains": 20,
+        "total_elements": 46080000,
+        "mesh_quality_avg": 0.3983,
+        "phase_accuracy": 0.0051084714051855,
+        "num_phases": 1
+      },
+      "cross_seed_quality_cv": 0.0010607506711705283,
+      "cross_seed_accuracy_cv": 0.2890900096219033,
+      "seed_results": {
+        "42": {
+          "time_mean": 0.0009562015533447265,
+          "time_std": 0.00013980810183510716,
+          "quality_mean": 0.39929,
+          "quality_std": 0.0005817215828899536,
+          "accuracy_mean": 0.00356319920652316,
+          "accuracy_std": 0.0014498759373989365,
+          "grain_count_mean": 20.0
+        },
+        "123": {
+          "time_mean": 0.0009153842926025391,
+          "time_std": 2.912362724535553e-05,
+          "quality_mean": 0.3980600000000001,
+          "quality_std": 0.0007213875518748501,
+          "accuracy_mean": 0.004005827171231891,
+          "accuracy_std": 0.0024646549666223474,
+          "grain_count_mean": 20.0
+        },
+        "456": {
+          "time_mean": 0.0009211540222167969,
+          "time_std": 5.9646324843578494e-05,
+          "quality_mean": 0.39905,
+          "quality_std": 0.0011545561917897242,
+          "accuracy_mean": 0.004513735216463833,
+          "accuracy_std": 0.001573732506535307,
+          "grain_count_mean": 20.0
+        },
+        "789": {
+          "time_mean": 0.0010781288146972656,
+          "time_std": 0.00039320088635533534,
+          "quality_mean": 0.3989,
+          "quality_std": 0.0007987490219086312,
+          "accuracy_mean": 0.006742370329157576,
+          "accuracy_std": 0.002569550122394331,
+          "grain_count_mean": 20.0
+        },
+        "1024": {
+          "time_mean": 0.0011159420013427735,
+          "time_std": 0.0003061669837670688,
+          "quality_mean": 0.39860999999999996,
+          "quality_std": 0.0014547852075134599,
+          "accuracy_mean": 0.003102792964702805,
+          "accuracy_std": 0.0022538714631060337,
+          "grain_count_mean": 20.0
+        }
+      }
+    },
+    "G5_MultiComponent_Steel": {
+      "fixed_seed_deterministic": false,
+      "max_deviation_fixed_seed": 0.5806667283401737,
+      "fixed_seed_results": {
+        "pipeline_time": 1.9991381168365479,
+        "num_rve_models": 7,
+        "total_grains": 59206,
+        "total_elements": 91194822,
+        "mesh_quality_avg": 0.3849428571428572,
+        "phase_accuracy": 0.003791248537171744,
+        "num_phases": 4
+      },
+      "cross_seed_quality_cv": 0.0004996611599385217,
+      "cross_seed_accuracy_cv": 0.038398942169385886,
+      "seed_results": {
+        "42": {
+          "time_mean": 0.660291337966919,
+          "time_std": 0.0035619292441575598,
+          "quality_mean": 0.3844485714285714,
+          "quality_std": 0.0007757340171129005,
+          "accuracy_mean": 0.00397075494387196,
+          "accuracy_std": 0.0003796925566040839,
+          "grain_count_mean": 59206.0
+        },
+        "123": {
+          "time_mean": 0.6779117584228516,
+          "time_std": 0.014813588133249199,
+          "quality_mean": 0.38449999999999995,
+          "quality_std": 0.0004237827706911514,
+          "accuracy_mean": 0.0036669832990092765,
+          "accuracy_std": 0.0003608390600330908,
+          "grain_count_mean": 59206.0
+        },
+        "456": {
+          "time_mean": 0.6815284252166748,
+          "time_std": 0.003230993340491751,
+          "quality_mean": 0.3845228571428571,
+          "quality_std": 0.0007900710378807616,
+          "accuracy_mean": 0.003976616254603073,
+          "accuracy_std": 0.0007197853227482886,
+          "grain_count_mean": 59206.0
+        },
+        "789": {
+          "time_mean": 0.6978755474090577,
+          "time_std": 0.03299939985325962,
+          "quality_mean": 0.3841285714285715,
+          "quality_std": 0.00013061862229330712,
+          "accuracy_mean": 0.0036795906102892613,
+          "accuracy_std": 0.0008146099417255427,
+          "grain_count_mean": 59206.0
+        },
+        "1024": {
+          "time_mean": 0.6788274765014648,
+          "time_std": 0.0028532850785468935,
+          "quality_mean": 0.38472285714285714,
+          "quality_std": 0.0003313053958300472,
+          "accuracy_mean": 0.003682686485901336,
+          "accuracy_std": 0.0003311080664867764,
+          "grain_count_mean": 59206.0
+        }
+      }
+    }
+  },
+  "experimental_benchmark": {
+    "G2_DualPhase_DPSteel": {
+      "phase_vf_comparison": [
+        {
+          "ferrite_vf": 0.72,
+          "martensite_vf": 0.28,
+          "phase_accuracy": 0.0038094590872256653
+        },
+        {
+          "ferrite_vf": 0.72,
+          "martensite_vf": 0.28,
+          "phase_accuracy": 0.004886039943678533
+        },
+        {
+          "ferrite_vf": 0.72,
+          "martensite_vf": 0.28,
+          "phase_accuracy": 0.004844641505261635
+        },
+        {
+          "ferrite_vf": 0.72,
+          "martensite_vf": 0.28,
+          "phase_accuracy": 0.0039960681821102975
+        },
+        {
+          "ferrite_vf": 0.72,
+          "martensite_vf": 0.28,
+          "phase_accuracy": 0.004211864976595446
+        },
+        {
+          "ferrite_vf": 0.72,
+          "martensite_vf": 0.28,
+          "phase_accuracy": 0.0036523668677558643
+        },
+        {
+          "ferrite_vf": 0.72,
+          "martensite_vf": 0.28,
+          "phase_accuracy": 0.003389325063160281
+        },
+        {
+          "ferrite_vf": 0.72,
+          "martensite_vf": 0.28,
+          "phase_accuracy": 0.004891047739158612
+        },
+        {
+          "ferrite_vf": 0.72,
+          "martensite_vf": 0.28,
+          "phase_accuracy": 0.004483041327554171
+        },
+        {
+          "ferrite_vf": 0.72,
+          "martensite_vf": 0.28,
+          "phase_accuracy": 0.0031966489247177293
+        },
+        {
+          "ferrite_vf": 0.72,
+          "martensite_vf": 0.28,
+          "phase_accuracy": 0.003299906202293576
+        },
+        {
+          "ferrite_vf": 0.72,
+          "martensite_vf": 0.28,
+          "phase_accuracy": 0.0032390728045326236
+        },
+        {
+          "ferrite_vf": 0.72,
+          "martensite_vf": 0.28,
+          "phase_accuracy": 0.004107604802561039
+        },
+        {
+          "ferrite_vf": 0.72,
+          "martensite_vf": 0.28,
+          "phase_accuracy": 0.0038346551807134158
+        },
+        {
+          "ferrite_vf": 0.72,
+          "martensite_vf": 0.28,
+          "phase_accuracy": 0.002581942624111336
+        },
+        {
+          "ferrite_vf": 0.72,
+          "martensite_vf": 0.28,
+          "phase_accuracy": 0.0035416138016583013
+        },
+        {
+          "ferrite_vf": 0.72,
+          "martensite_vf": 0.28,
+          "phase_accuracy": 0.007420603936716862
+        },
+        {
+          "ferrite_vf": 0.72,
+          "martensite_vf": 0.28,
+          "phase_accuracy": 0.002763444590844752
+        },
+        {
+          "ferrite_vf": 0.72,
+          "martensite_vf": 0.28,
+          "phase_accuracy": 0.005692152802596738
+        },
+        {
+          "ferrite_vf": 0.72,
+          "martensite_vf": 0.28,
+          "phase_accuracy": 0.003787332087794318
+        },
+        {
+          "ferrite_vf": 0.72,
+          "martensite_vf": 0.28,
+          "phase_accuracy": 0.003930706741265118
+        },
+        {
+          "ferrite_vf": 0.72,
+          "martensite_vf": 0.28,
+          "phase_accuracy": 0.003526357658263382
+        },
+        {
+          "ferrite_vf": 0.72,
+          "martensite_vf": 0.28,
+          "phase_accuracy": 0.0033501537066558743
+        },
+        {
+          "ferrite_vf": 0.72,
+          "martensite_vf": 0.28,
+          "phase_accuracy": 0.003307477249772567
+        },
+        {
+          "ferrite_vf": 0.72,
+          "martensite_vf": 0.28,
+          "phase_accuracy": 0.004022570209173772
+        },
+        {
+          "ferrite_vf": 0.72,
+          "martensite_vf": 0.28,
+          "phase_accuracy": 0.005720518040324855
+        },
+        {
+          "ferrite_vf": 0.72,
+          "martensite_vf": 0.28,
+          "phase_accuracy": 0.0033009567163979486
+        },
+        {
+          "ferrite_vf": 0.72,
+          "martensite_vf": 0.28,
+          "phase_accuracy": 0.002236648120963601
+        },
+        {
+          "ferrite_vf": 0.72,
+          "martensite_vf": 0.28,
+          "phase_accuracy": 0.00394404640039607
+        },
+        {
+          "ferrite_vf": 0.72,
+          "martensite_vf": 0.28,
+          "phase_accuracy": 0.003565883660582761
+        }
+      ],
+      "grain_size_comparison": [
+        {
+          "ferrite_gs": 15.0,
+          "martensite_gs": 3.0
+        },
+        {
+          "ferrite_gs": 15.0,
+          "martensite_gs": 3.0
+        },
+        {
+          "ferrite_gs": 15.0,
+          "martensite_gs": 3.0
+        },
+        {
+          "ferrite_gs": 15.0,
+          "martensite_gs": 3.0
+        },
+        {
+          "ferrite_gs": 15.0,
+          "martensite_gs": 3.0
+        },
+        {
+          "ferrite_gs": 15.0,
+          "martensite_gs": 3.0
+        },
+        {
+          "ferrite_gs": 15.0,
+          "martensite_gs": 3.0
+        },
+        {
+          "ferrite_gs": 15.0,
+          "martensite_gs": 3.0
+        },
+        {
+          "ferrite_gs": 15.0,
+          "martensite_gs": 3.0
+        },
+        {
+          "ferrite_gs": 15.0,
+          "martensite_gs": 3.0
+        },
+        {
+          "ferrite_gs": 15.0,
+          "martensite_gs": 3.0
+        },
+        {
+          "ferrite_gs": 15.0,
+          "martensite_gs": 3.0
+        },
+        {
+          "ferrite_gs": 15.0,
+          "martensite_gs": 3.0
+        },
+        {
+          "ferrite_gs": 15.0,
+          "martensite_gs": 3.0
+        },
+        {
+          "ferrite_gs": 15.0,
+          "martensite_gs": 3.0
+        },
+        {
+          "ferrite_gs": 15.0,
+          "martensite_gs": 3.0
+        },
+        {
+          "ferrite_gs": 15.0,
+          "martensite_gs": 3.0
+        },
+        {
+          "ferrite_gs": 15.0,
+          "martensite_gs": 3.0
+        },
+        {
+          "ferrite_gs": 15.0,
+          "martensite_gs": 3.0
+        },
+        {
+          "ferrite_gs": 15.0,
+          "martensite_gs": 3.0
+        },
+        {
+          "ferrite_gs": 15.0,
+          "martensite_gs": 3.0
+        },
+        {
+          "ferrite_gs": 15.0,
+          "martensite_gs": 3.0
+        },
+        {
+          "ferrite_gs": 15.0,
+          "martensite_gs": 3.0
+        },
+        {
+          "ferrite_gs": 15.0,
+          "martensite_gs": 3.0
+        },
+        {
+          "ferrite_gs": 15.0,
+          "martensite_gs": 3.0
+        },
+        {
+          "ferrite_gs": 15.0,
+          "martensite_gs": 3.0
+        },
+        {
+          "ferrite_gs": 15.0,
+          "martensite_gs": 3.0
+        },
+        {
+          "ferrite_gs": 15.0,
+          "martensite_gs": 3.0
+        },
+        {
+          "ferrite_gs": 15.0,
+          "martensite_gs": 3.0
+        },
+        {
+          "ferrite_gs": 15.0,
+          "martensite_gs": 3.0
+        }
+      ],
+      "statistical_tests": {
+        "ferrite_vf_mean": 0.7199999999999999,
+        "ferrite_vf_std": 1.1102230246251565e-16,
+        "ferrite_t_statistic": -5.385164807134504,
+        "ferrite_p_value": 8.699475448390493e-06,
+        "ferrite_mae": 0.0,
+        "martensite_vf_mean": 0.28,
+        "martensite_vf_std": 0.0,
+        "martensite_t_statistic": NaN,
+        "martensite_p_value": NaN,
+        "martensite_mae": 0.0
+      }
+    },
+    "G4_VariableGrainSize_Ni": {
+      "grain_size_comparison": [
+        {
+          "mean_gs": 95.81800000000001,
+          "std_gs": 43.95823513290769,
+          "cv_gs": 0.4587680303586767,
+          "num_grains": 20
+        },
+        {
+          "mean_gs": 83.112,
+          "std_gs": 27.42438287364002,
+          "cv_gs": 0.32996899212676895,
+          "num_grains": 20
+        },
+        {
+          "mean_gs": 88.027,
+          "std_gs": 38.38185249567821,
+          "cv_gs": 0.43602363474477385,
+          "num_grains": 20
+        },
+        {
+          "mean_gs": 100.61099999999999,
+          "std_gs": 54.34302594629784,
+          "cv_gs": 0.5401300647672506,
+          "num_grains": 20
+        },
+        {
+          "mean_gs": 76.218,
+          "std_gs": 25.489468334981016,
+          "cv_gs": 0.3344284596155897,
+          "num_grains": 20
+        },
+        {
+          "mean_gs": 84.804,
+          "std_gs": 35.311877944963506,
+          "cv_gs": 0.4163940137842968,
+          "num_grains": 20
+        },
+        {
+          "mean_gs": 111.333,
+          "std_gs": 69.14686313203224,
+          "cv_gs": 0.6210814684957042,
+          "num_grains": 20
+        },
+        {
+          "mean_gs": 80.12800000000001,
+          "std_gs": 32.87230865029105,
+          "cv_gs": 0.4102474621891355,
+          "num_grains": 20
+        },
+        {
+          "mean_gs": 91.90099999999998,
+          "std_gs": 26.07176497669462,
+          "cv_gs": 0.2836940291911364,
+          "num_grains": 20
+        },
+        {
+          "mean_gs": 71.459,
+          "std_gs": 37.55283276931315,
+          "cv_gs": 0.5255157890442512,
+          "num_grains": 20
+        },
+        {
+          "mean_gs": 122.46799999999999,
+          "std_gs": 69.79752442601387,
+          "cv_gs": 0.569924587859799,
+          "num_grains": 20
+        },
+        {
+          "mean_gs": 104.07000000000001,
+          "std_gs": 35.67616010727612,
+          "cv_gs": 0.3428092640268676,
+          "num_grains": 20
+        },
+        {
+          "mean_gs": 82.66599999999998,
+          "std_gs": 44.07575074800202,
+          "cv_gs": 0.5331787040379604,
+          "num_grains": 20
+        },
+        {
+          "mean_gs": 87.13499999999999,
+          "std_gs": 41.54502382957555,
+          "cv_gs": 0.4767891642804333,
+          "num_grains": 20
+        },
+        {
+          "mean_gs": 86.395,
+          "std_gs": 48.43843210716053,
+          "cv_gs": 0.5606624469837437,
+          "num_grains": 20
+        },
+        {
+          "mean_gs": 89.37,
+          "std_gs": 33.190532686294745,
+          "cv_gs": 0.37138338017561534,
+          "num_grains": 20
+        },
+        {
+          "mean_gs": 90.243,
+          "std_gs": 48.2801329844896,
+          "cv_gs": 0.5350014182206886,
+          "num_grains": 20
+        },
+        {
+          "mean_gs": 101.43199999999999,
+          "std_gs": 59.4690372883234,
+          "cv_gs": 0.5862946337282456,
+          "num_grains": 20
+        },
+        {
+          "mean_gs": 79.72200000000001,
+          "std_gs": 36.02500570437151,
+          "cv_gs": 0.45188286425794016,
+          "num_grains": 20
+        },
+        {
+          "mean_gs": 81.39500000000001,
+          "std_gs": 31.418603804115808,
+          "cv_gs": 0.38600164388618224,
+          "num_grains": 20
+        },
+        {
+          "mean_gs": 74.97800000000001,
+          "std_gs": 25.39961291043625,
+          "cv_gs": 0.33876087532924654,
+          "num_grains": 20
+        },
+        {
+          "mean_gs": 80.37799999999999,
+          "std_gs": 44.45917223700864,
+          "cv_gs": 0.5531261319889602,
+          "num_grains": 20
+        },
+        {
+          "mean_gs": 101.26599999999999,
+          "std_gs": 41.44916216282302,
+          "cv_gs": 0.4093097600657973,
+          "num_grains": 20
+        },
+        {
+          "mean_gs": 105.91400000000002,
+          "std_gs": 62.836928028031416,
+          "cv_gs": 0.5932825502580528,
+          "num_grains": 20
+        },
+        {
+          "mean_gs": 94.05099999999999,
+          "std_gs": 42.2021536061846,
+          "cv_gs": 0.44871562882036986,
+          "num_grains": 20
+        },
+        {
+          "mean_gs": 82.87100000000001,
+          "std_gs": 28.85561000914727,
+          "cv_gs": 0.34819912887677557,
+          "num_grains": 20
+        },
+        {
+          "mean_gs": 73.916,
+          "std_gs": 44.20367953010246,
+          "cv_gs": 0.5980258608434231,
+          "num_grains": 20
+        },
+        {
+          "mean_gs": 81.874,
+          "std_gs": 45.27113278900806,
+          "cv_gs": 0.5529366195496502,
+          "num_grains": 20
+        },
+        {
+          "mean_gs": 126.194,
+          "std_gs": 50.10301691515193,
+          "cv_gs": 0.39703168863140825,
+          "num_grains": 20
+        },
+        {
+          "mean_gs": 114.99499999999998,
+          "std_gs": 52.94395645397121,
+          "cv_gs": 0.46040224752355513,
+          "num_grains": 20
+        }
+      ],
+      "statistical_tests": {
+        "mean_gs_mean": 91.49146666666665,
+        "mean_gs_std": 14.036877852602723,
+        "mean_gs_t_statistic": 4.408632925748375,
+        "mean_gs_p_value": 0.0001306628277597922,
+        "mean_gs_mae": 13.07193333333333,
+        "std_gs_mean": 42.53977468614291,
+        "std_gs_std": 11.975685407755504,
+        "std_gs_t_statistic": 1.1420728578099206,
+        "std_gs_p_value": 0.2627660954058796,
+        "std_gs_mae": 9.62844046832936,
+        "cv_target": 0.5,
+        "cv_actual_mean": 0.46233235145540996
+      }
+    }
+  }
+}

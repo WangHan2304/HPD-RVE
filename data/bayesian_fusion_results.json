@@ -1,0 +1,49 @@
+{
+  "synthetic_experiment": {
+    "bayesian": {
+      "mean_error_pct": 1.4921,
+      "std_error_pct": 0.3414,
+      "max_error_pct": 2.4835,
+      "median_error_pct": 1.4842
+    },
+    "priority": {
+      "mean_error_pct": 1.6169,
+      "std_error_pct": 0.3866,
+      "max_error_pct": 2.5384,
+      "median_error_pct": 1.6214
+    },
+    "average": {
+      "mean_error_pct": 5.6607,
+      "std_error_pct": 1.4163,
+      "max_error_pct": 9.2103,
+      "median_error_pct": 5.5784
+    },
+    "random": {
+      "mean_error_pct": 7.1716,
+      "std_error_pct": 2.9216,
+      "max_error_pct": 16.0916,
+      "median_error_pct": 6.9748
+    }
+  },
+  "cost_analysis": {
+    "adaptive_total_evals": 76,
+    "fixed_baseline_evals": 250,
+    "medium_baseline_evals": 90,
+    "savings_vs_fixed_pct": 69.6,
+    "savings_vs_medium_pct": 15.6,
+    "n_parameters": 10
+  },
+  "dp800_demo": {
+    "param": "ferrite_CRSS",
+    "posterior_mean": 132.474,
+    "posterior_std": 2.4622,
+    "resolved_value": 132.474,
+    "source": "EXPERIMENTAL (fit, this work)",
+    "confidence_tier": 1.0,
+    "kl_divergence": 2.636033,
+    "information_gain_bits": 3.803,
+    "true_value": 130.0,
+    "error_vs_truth": 1.9031
+  },
+  "description": "Bayesian fusion engine validation results for HPD-RVE paper"
+}
