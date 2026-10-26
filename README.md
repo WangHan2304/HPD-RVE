@@ -6,7 +6,7 @@
 A fully automated pipeline for generating CPFEM-ready polycrystalline microstructure models from multi-source material parameter data. This repository contains the complete source code, input files, and post-processing scripts to reproduce all results presented in:
 
 > **"Hierarchical Parameter-Driven Automated Representative Volume Element Generation for Crystal Plasticity Finite Element Simulations"**  
-> *Submitted to Acta Materialia / International Journal of Plasticity (2026)*
+> *Submitted to Materials Today Communications (MTCOMM-D-26-06017, 2026)*
 
 ---
 
@@ -129,6 +129,9 @@ HPD-RVE/
 ├── rve_core.py                          # Core HPD-RVE pipeline
 ├── parametric_cpfem.py                  # Physics-based CPFEM solver (Hall-Petch + rule-of-mixtures)
 ├── cpfem_simulation.py                  # Taylor-type CPFEM solver
+├── bayesian_fusion_engine.py            # Priority-based data-fusion engine (provenance generation)
+├── hpd_rve_automation.py                # End-to-end automation orchestration
+├── damask_recalibration.py              # DAMASK re-calibration utilities
 ├── run_parametric_scan_v3.py            # Systematic parametric scan (100 configurations)
 ├── experimental_benchmark_and_surrogate.py  # Experimental validation + surrogate models
 ├── generate_final_paper.py              # Paper generation (python-docx)
@@ -144,7 +147,13 @@ HPD-RVE/
 │   ├── material.yaml                    # Full material definition with grain orientations
 │   ├── results_*/                       # HDF5 output per loading case
 │   └── *.py                             # Post-processing scripts
-├── figures/                             # All paper figures (35 PNG files)
+├── data/                                # All numerical results behind figures (see data/README.md)
+│   ├── dp800_fusion_provenance.json     # Fused-parameter provenance record (CRSS conflict → tiers)
+│   ├── experiment_results*.json         # Tasan 2014 DP800 experimental curves
+│   ├── *_convergence_results.json       # Kanit / N-model / mesh convergence
+│   └── parametric_scan_results.json     # 100-configuration scan
+├── figures/                             # Main manuscript figures (7 PNGs)
+├── reproduce_all.sh                     # One-shot regeneration of all figures from data/
 ├── requirements.txt                     # Python dependencies
 ├── LICENSE                              # MIT License
 └── README.md                            # This file
@@ -204,6 +213,20 @@ To regenerate the complete paper:
 ```bash
 python generate_final_paper.py
 ```
+
+### Data Availability
+
+All numerical results behind the figures are archived under `data/` (file-by-file map in
+[`data/README.md`](data/README.md)). The fused-parameter provenance record cited in the
+manuscript is `data/dp800_fusion_provenance.json`. To regenerate every figure from the
+archived data in a single step:
+
+```bash
+bash reproduce_all.sh
+```
+
+The repository is public and MIT-licensed; no large raw DAMASK HDF5 fields are required to
+reproduce the reported curves—those are archived separately on Zenodo (DOI assigned on acceptance).
 
 ---
 
