@@ -76,6 +76,25 @@ else
     echo "  G5 DAMASK results not found"
 fi
 
+# Step 4b: verify archived benchmark curves (MTCOMM-D-26-06017)
+echo "[Step 4b] Checking archived benchmark curves..."
+python3 - <<'PY'
+import json, glob
+def find(n):
+    hits = glob.glob('data/'+n) + glob.glob('experimental_data/'+n) + glob.glob('*/data/'+n)
+    return hits[0] if hits else None
+checks = [('fig27_calib_s168.json', 'rp02_mpa', 474.0, 0.5),
+          ('fig27_calib_s168.json', 'flow10_mpa', 815.4, 0.5),
+          ('g3_engine_repro.json', 'endpoint_relative_deviation_pct', 0.008, 0.0005)]
+for name, key, expect, tol in checks:
+    path = find(name)
+    if path is None:
+        print('  missing:', name)
+        continue
+    val = json.load(open(path))[key]
+    print('  %-42s %-34s = %.6f  %s' % (name, key, val, 'OK' if abs(val-expect) < tol else 'MISMATCH'))
+PY
+
 # Step 5: Summary
 echo ""
 echo "=========================================="

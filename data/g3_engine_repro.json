@@ -1,0 +1,84 @@
+{
+  "description": "g3 uniaxial engine-reproducibility check underlying the 0.008% endpoint agreement in MTCOMM-D-26-06017.",
+  "recompute_script": "draw_fig8.py:load_fresh_run / cauchy_xx_mpa",
+  "algorithm": "phase-volume-weighted P,F -> sigma=P F^T/det(F); err=|s_new-s_ref|/|s_ref|*100",
+  "reference": {
+    "hdf5": "/home/cl/20260617RVE论文/damask_run_g3/results_g3_uniaxial/g3_uniaxial.hdf5",
+    "size_bytes": 47914257,
+    "sha256": "2749769ce40833849d0677a5e05cafd230b729250bd0b38afbaaf903da3a3058",
+    "json": "damask_run_g3/g3_damask_results.json",
+    "n_increments": 11,
+    "endpoint_stress_mpa": 636.449502758555
+  },
+  "fresh_build": {
+    "hdf5": "/home/cl/20260617RVE论文/damask_run_g3/results_g3_uniaxial_fresh/g3_uniaxial.hdf5",
+    "size_bytes": 47914257,
+    "sha256": "f8474dd74c05df1bbb730af1033e31b6fe995e7d584fb769bafab128fb1e8b75",
+    "n_increments": 11,
+    "endpoint_stress_mpa": 636.4979609983985
+  },
+  "strain": [
+    0.0,
+    0.01,
+    0.02,
+    0.03,
+    0.04,
+    0.05,
+    0.06,
+    0.07,
+    0.08,
+    0.09,
+    0.1
+  ],
+  "reference_stress_mpa": [
+    -0.0,
+    495.928294,
+    534.068079,
+    555.780947,
+    572.658552,
+    586.751138,
+    598.97729,
+    609.765269,
+    619.456727,
+    628.312504,
+    636.449503
+  ],
+  "fresh_stress_mpa": [
+    -0.0,
+    496.237981,
+    534.19866,
+    555.879177,
+    572.730941,
+    586.821147,
+    599.030294,
+    609.817862,
+    619.508221,
+    628.347729,
+    636.497961
+  ],
+  "relative_deviation_pct": [
+    0.0,
+    0.062446,
+    0.02445,
+    0.017674,
+    0.012641,
+    0.011932,
+    0.008849,
+    0.008625,
+    0.008313,
+    0.005606,
+    0.007614
+  ],
+  "endpoint_relative_deviation_pct": 0.007613838903711974,
+  "max_relative_deviation_pct": 0.06244591381081772,
+  "max_at_strain": 0.010000000000978337,
+  "mean_relative_deviation_pct": 0.0152864023443695,
+  "manuscript": {
+    "fresh_mpa": 636.5,
+    "reference_mpa": 636.45,
+    "endpoint_pct": 0.008,
+    "caption": "within 0.01%"
+  },
+  "note": "The 0.008% is the END-POINT deviation. The full-curve maximum (0.062% at 1% strain) and mean (0.015%) are different statistics and are not the endpoint figure.",
+  "generated": "2026-11-13"
+}

@@ -1,0 +1,134 @@
+{
+  "description": "Per-point DAMASK_grid curve underlying Figure 6 (RWTH cross-batch CP-strength scaling s=1.68) of MTCOMM-D-26-06017.",
+  "solver": "DAMASK_grid v3.0.2 (spectral_basic)",
+  "source_hdf5": {
+    "path": "/home/cl/rve_run/results_calib_s1.68/calib_s1.68.hdf5",
+    "size_bytes": 219635092,
+    "sha256": "d995ac9bc9de233f63bc0609adb40020c93ca3d7aa3d1b20f76fe94e7f7b8924"
+  },
+  "recompute_script": "experimental_data/make_figure27.py:load_damask / rp02_off",
+  "algorithm": "volume-weighted P,F -> sigma=P F^T/det(F); Rp0.2 = first crossing of E*(eps-0.002) with the <= criterion; flow10 = interp at eps=0.10",
+  "E_mpa": 200000.0,
+  "n_increments": 51,
+  "cp_strength_scale": 1.68,
+  "base_xi_pa": {
+    "Ferrite": [
+      95000000.0,
+      260000000.0
+    ],
+    "Martensite": [
+      250000000.0,
+      600000000.0
+    ]
+  },
+  "scaled_xi_pa": {
+    "Ferrite": [
+      159600000.0,
+      436800000.0
+    ],
+    "Martensite": [
+      420000000.0,
+      1008000000.0
+    ]
+  },
+  "strain": [
+    0.0,
+    0.004,
+    0.008,
+    0.012,
+    0.016,
+    0.02,
+    0.024,
+    0.028,
+    0.032,
+    0.036,
+    0.04,
+    0.044,
+    0.048,
+    0.052,
+    0.056,
+    0.06,
+    0.064,
+    0.068,
+    0.072,
+    0.076,
+    0.08,
+    0.084,
+    0.0879999999,
+    0.092,
+    0.096,
+    0.1
+  ],
+  "stress_mpa": [
+    -0.0,
+    467.409819,
+    538.792816,
+    571.650583,
+    595.016517,
+    613.974398,
+    630.320268,
+    645.065208,
+    658.632397,
+    671.34495,
+    683.342063,
+    694.747848,
+    705.670423,
+    716.056982,
+    726.073429,
+    735.659806,
+    744.89408,
+    753.801895,
+    762.389214,
+    770.679238,
+    778.688056,
+    786.44869,
+    793.980572,
+    801.307668,
+    808.452124,
+    815.418952
+  ],
+  "rp02_mpa": 474.01399473699695,
+  "flow10_mpa": 815.418951597122,
+  "rwth_benchmark": {
+    "rp02_mpa": 492.3,
+    "rp02_std_mpa": 9.3,
+    "flow10_mpa": 807.1,
+    "flow10_std_mpa": 9.4
+  },
+  "delta_vs_rwth_mpa": {
+    "rp02": -18.286005263003062,
+    "flow10": 8.318951597122009
+  },
+  "scan_summary": [
+    {
+      "s": 1.0,
+      "rp02_mpa": 297.0,
+      "flow10_mpa": 524.0
+    },
+    {
+      "s": 1.6,
+      "rp02_mpa": 465.3,
+      "flow10_mpa": 784.5
+    },
+    {
+      "s": 1.68,
+      "rp02_mpa": 474.014,
+      "flow10_mpa": 815.419
+    },
+    {
+      "s": 1.8,
+      "rp02_mpa": 503.7,
+      "flow10_mpa": 861.7
+    },
+    {
+      "s": 2.0,
+      "rp02_mpa": 552.1,
+      "flow10_mpa": 937.7
+    }
+  ],
+  "manuscript_values": {
+    "rp02_mpa": 474,
+    "flow10_mpa": 815
+  },
+  "generated": "2026-11-13"
+}

@@ -1,6 +1,6 @@
 # HPD-RVE: Rule-Based Decision Orchestration and Provenance for CPFEM RVE Parameter Preparation
 
-**Data and scripts accompanying the manuscript submitted to *Computational Materials Science*.**
+**Data and scripts accompanying the manuscript submitted to *Materials Today Communications*.**
 
 This package provides the source code, input data, and pre-computed results
 needed to reproduce the key findings of the paper: an automated
@@ -106,6 +106,8 @@ requires `prepare_damask_run.py` and the `damask_run*` working directories
 | Confidence-tier calibration (S_Ablation) | `code/ece_calibration.py`, `supplementary_figures/S_Ablation.png` |
 | Hall–Petch grain strengthening (S_HallPetch)| `supplementary_figures/S_HallPetch.png`            |
 | Fig. 1–6 as published                    | `figures/fig1.png` … `figures/fig6_mesh_convergence.png` |
+| Fig. 6 RWTH cross-batch CP scaling (s=1.68) | `data/fig27_calib_s168.json` (per-point DAMASK curve; Rp0.2=474.0 MPa, flow@10%=815.4 MPa) |
+| g3 engine-reproducibility endpoint (0.008%) | `data/g3_engine_repro.json` (reference vs freshly built DAMASK 3.0.2) |
 
 ---
 

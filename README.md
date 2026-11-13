@@ -236,18 +236,12 @@ reproduce the reported curves—those are archived separately on Zenodo (DOI ass
 
 ## Citation
 
-If you use HPD-RVE in your research, please cite:
+If you use HPD-RVE in your research, please cite the accompanying manuscript:
 
-```bibtex
-@article{hpdrve2026,
-  title={Hierarchical Parameter-Driven Automated Representative Volume Element 
-         Generation for Crystal Plasticity Finite Element Simulations},
-  author={[Authors]},
-  journal={Acta Materialia / International Journal of Plasticity},
-  year={2026},
-  note={Under review}
-}
-```
+> *HPD-RVE: Automated Parameter Resolution and Provenance Tracking for CPFEM RVE Preparation*,
+> Materials Today Communications, manuscript MTCOMM-D-26-06017 (under review).
+
+Add the full author list and final bibliographic details once the article is published.
 
 ---
 
