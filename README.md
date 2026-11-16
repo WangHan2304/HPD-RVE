@@ -234,7 +234,7 @@ bash reproduce_all.sh
 
 ### Code version for the manuscript
 
-The results reported in *HPD-RVE: Automated Parameter Resolution and Provenance Tracking for CPFEM RVE Preparation* (Materials Today Communications, manuscript MTCOMM-D-26-06017) correspond to commit `69aaf5043ba6694c3024ef1d61cc4d11a93dab33` of this repository. The complete constitutive parameter set is `damask_run/material.yaml` (also reproduced in Table 15 of the manuscript); all figure data are under `data/`, and `bash reproduce_all.sh` regenerates every figure from the archived data.
+The results reported in *HPD-RVE: Automated Parameter Resolution and Provenance Tracking for CPFEM RVE Preparation* (Materials Today Communications, manuscript MTCOMM-D-26-06017) correspond to commit `69aaf5043ba6694c3024ef1d61cc4d11a93dab33` of this repository. The complete constitutive parameter set is `damask_run/material.yaml` (also reproduced in Table 15 of the manuscript); all figure data are under `data/`, and `bash reproduce_all.sh` regenerates every figure from the archived data. Commits after that point update only this documentation, the archived verification aggregates under `data/` (`fig27_calib_s168.json`, `g3_engine_repro.json`) and the reproduction-script assertions; no result value, parameter, figure or manuscript claim has changed.
 
 The repository is public and MIT-licensed; no large raw DAMASK HDF5 fields are required to
 reproduce the reported curves—those are archived separately on Zenodo (DOI assigned on acceptance).
