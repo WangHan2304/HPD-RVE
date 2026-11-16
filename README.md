@@ -14,9 +14,9 @@ A fully automated pipeline for generating CPFEM-ready polycrystalline microstruc
 
 HPD-RVE transforms microstructure modeling from a labor-intensive manual process into a systematic, reproducible computational operation. The pipeline achieves:
 
-- **4–5 orders of magnitude** reduction in modeling time vs. manual/Voronoi methods
+- Substantially reduced manual effort in parameter resolution and RVE preparation
 - **Sub-0.5%** phase volume fraction accuracy
-- **100% cross-material generalization** across 5 material groups (single-phase FCC to four-phase complex alloys)
+- Demonstrated on material systems ranging from single-phase FCC to multi-phase steels
 - **Near-perfect reproducibility** (S_cons ≈ 0.9998, CV < 0.5% across random seeds)
 
 ### Key Features
@@ -175,25 +175,34 @@ HPD-RVE/
 
 ## Key Results
 
-### Microstructure-Property Mapping
-- **100 configurations**: 5 v_m × 4 d_m/d_f × 5 seeds
-- **Hall-Petch coefficient**: k_y = 25 MPa·μm^0.5 (validated)
-- **Yield strength range**: 303 MPa (pure ferrite) → 492 MPa (pure martensite)
-- **v_m sensitivity**: 185 MPa per 1% v_m, R² = 1.000
+The results below are those reported in manuscript MTCOMM-D-26-06017
+(Materials Today Communications, under review). The corresponding code version is
+recorded above under "Code version for the manuscript"; the per-point curves and
+checksums are in `data/`.
 
-### Experimental Validation (DP800)
-- Yield stress: 356 MPa (predicted) vs. 340 MPa (measured) — **4.8% error**
-- Phase stress ratio σ_m/σ_f = 2.27 (within experimental range 1.5–2.5)
+### DP800 validation (within-calibration)
+- Taylor iso-strain Rp0.2 = 356 MPa vs 340 MPa experiment (+4.8%)
+- Calibrated full-field DAMASK Rp0.2 = 345.1 MPa (+1.5%)
+- Default-parameter offsets: yield 299 MPa (-12%) and post-yield flow 382 MPa
+  (+12.4%); retained only for error attribution, not as validated predictions
 
-### Surrogate Models
-- GPR: R² = 0.999, MAE = 0.65 MPa
-- RF: R² = 0.999, MAE = 0.64 MPa
-- Inverse design: σ_y = 380 MPa → v_m = 0.39, d_m/d_f = 0.53
+### Factorial response surface
+- 16 cell means; fitted slope b = 349 MPa per unit martensite volume fraction
+  (34.9 MPa per 10 vol%, 3.49 MPa per vol%)
+- Grain-size-ratio coefficient = -12 MPa per unit d_m/d_f
 
-### DAMASK Full-Field Verification
-- 3 loading modes: uniaxial, plane-strain, simple shear
-- 150/150 increments converged with 0 cutbacks
-- Voxel-resolved F/P/F_e/F_p/L_p fields (46 MB HDF5 per case)
+### Lattice-proxy and held-out checks
+- Uniaxial cF/cI proxy: mean relative gap 0.35%; flow at 10% strain
+  538 vs 534 MPa; end-point ratio 0.992; RMSE 2.3 MPa
+- Leave-publication-out whole-curve RMSE: 21.7 MPa (Alvarez DP800),
+  59.6 MPa (Ashrafi DP800), 114 MPa (POSTECH DP780)
+- g3 engine-reproducibility endpoint deviation 0.008%
+
+### Solver verification
+- 250/250 load increments across the five G2 DP800 loading modes, plus 50/50
+  on the G5 four-phase RVE, with no cutbacks
+- Voxel-resolved F/P/F_e/F_p/L_p fields are archived as DAMASK HDF5 outputs;
+  see the Zenodo deposition described in the manuscript
 
 ---
 
