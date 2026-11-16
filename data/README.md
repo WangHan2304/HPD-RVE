@@ -41,10 +41,10 @@ HPD-RVE_data_upload/
 │   ├── experiment_results.json / _real.json / _benchmark.json  # Tasan 2014 DP800 data
 │   ├── g3_validation_results.json         # G3 three-phase results
 │   ├── g5_cpfem_results.json              # G5 CPFEM results
-│   ├── parametric_scan_results.json / _summary.json  # 100-config design space (S_UQ)
+│   ├── parametric_scan_results.json / _summary.json  # 100-config legacy Taylor-proxy scan (pre-correction; NOT the reported factorial)
 │   ├── kanit_convergence_results.json     # S_Conv coverage curves
 │   ├── n_models_convergence_results.json  # ensemble-size convergence
-│   ├── fig6_mesh_convergence_data.json    # Fig. 6 mesh data
+│   ├── fig6_mesh_convergence_data.json    # legacy Richardson series (162-2592); the reported full-3D 24^3-64^3 h-convergence is in fullfield_case_study_results.json
 │   ├── ece_calibration_results.json       # confidence-tier calibration
 │   ├── bayesian_fusion_results.json       # fusion engine validation
 │   └── benchmark_and_surrogate_results.json
@@ -77,13 +77,15 @@ bash reproduce_all.sh
 
 This regenerates the figures from the pre-computed JSON in `data/`, including:
 - Figure 5 — the DP800 data-fusion provenance record
-  (`dp800_fusion_provenance.json`)
-- Figure 6 — mesh-discretization convergence
+  (`dp800_fusion_provenance.json`); `fig5_pred.png` is the separate DP800
+  yield prediction vs. experiment
+- Mesh-discretization convergence — the reported full-3D 24^3-64^3
+  h-convergence is in `fullfield_case_study_results.json`; `fig6_mesh_convergence_data.json` holds the earlier (superseded)
+  162-2592 Richardson series
 - N-model convergence and the supplementary figures (S_Algo … S_HallPetch)
 
 **Full mechanical validation (G2 yield point, G5 DAMASK).**
-Quantitative yield-point predictions (4.8% Taylor / 12.4% DAMASK vs.
-experiment, small strain ε ≤ 2%) are produced by `cpfem_simulation.py` and
+Quantitative predictions (4.8% Taylor Rp0.2 error vs. experiment; the uncalibrated DAMASK offsets of -12% Rp0.2 and +12.4% post-yield flow stress are retained for error attribution only, not as validated predictions; small strain ε ≤ 2%) are produced by `cpfem_simulation.py` and
 `damask_fullfield.py` reading the parameters resolved in
 `dp800_fusion_provenance.json`. Running DAMASK from scratch additionally
 requires `prepare_damask_run.py` and the `damask_run*` working directories
@@ -105,7 +107,7 @@ requires `prepare_damask_run.py` and the `damask_run*` working directories
 | UQ design space (S_UQ)                   | `data/parametric_scan_results*.json`                  |
 | Confidence-tier calibration (S_Ablation) | `code/ece_calibration.py`, `supplementary_figures/S_Ablation.png` |
 | Hall–Petch grain strengthening (S_HallPetch)| `supplementary_figures/S_HallPetch.png`            |
-| Fig. 1–6 as published                    | `figures/fig1.png` … `figures/fig6_mesh_convergence.png` |
+| Published figure set (repository files) | `figures/fig1.png` … `figures/fig6_mesh.png` |
 | Fig. 6 RWTH cross-batch CP scaling (s=1.68) | `data/fig27_calib_s168.json` (per-point DAMASK curve; Rp0.2=474.0 MPa, flow@10%=815.4 MPa) |
 | g3 engine-reproducibility endpoint (0.008%) | `data/g3_engine_repro.json` (reference vs freshly built DAMASK 3.0.2) |
 

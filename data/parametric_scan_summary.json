@@ -1,11 +1,13 @@
 {
+  "_status": "legacy",
+  "_note": "Legacy Taylor-proxy parametric scan (100 configurations), superseded by the full-field DAMASK factorial reported in MTCOMM-D-26-06017 (b = 349 MPa per unit v_m over 16 cell means). The slope / r2 / pure-phase values below are NOT the reported results.",
   "sens_vm_yield": 74.03499999999991,
   "sens_ratio_yield": 0.3599999999999568,
   "slope_vm": 185.2399999999996,
   "r2_vm": 0.9999997202297268,
-  "k_hp": NaN,
-  "sigma0_hp": NaN,
-  "r2_hp": NaN,
+  "k_hp": null,
+  "sigma0_hp": null,
+  "r2_hp": null,
   "sigma_pure_f": 302.9,
   "sigma_pure_m": 492.2
 }

@@ -5,7 +5,8 @@
 
 A fully automated pipeline for generating CPFEM-ready polycrystalline microstructure models from multi-source material parameter data. This repository contains the complete source code, input files, and post-processing scripts to reproduce all results presented in:
 
-> **"Hierarchical Parameter-Driven Automated Representative Volume Element Generation for Crystal Plasticity Finite Element Simulations"**  
+> **"HPD-RVE: Automated Parameter Resolution and Provenance Tracking for CPFEM RVE Preparation"**
+>
 > *Submitted to Materials Today Communications (MTCOMM-D-26-06017, 2026)*
 
 ---
@@ -28,7 +29,7 @@ HPD-RVE transforms microstructure modeling from a labor-intensive manual process
 | **Adaptive Model Quantity** | Automatically determines optimal RVE count based on material complexity |
 | **Full CPFEM Integration** | Taylor-type solver + DAMASK 3.0.2 spectral solver with HDF5 export |
 | **Microstructure-Property Mapping** | Physics-based CPFEM parametric scan (Hall-Petch + rule-of-mixtures) |
-| **Surrogate Modeling** | GPR/RF models (R² = 0.999) for inverse microstructure design |
+| **Surrogate Modeling** | GPR/RF surrogate models for inverse microstructure design (legacy feature of the parametric-scan tooling; not used in the reported results) |
 | **Uncertainty Quantification** | PCE-based propagation of input parameter uncertainty |
 
 ---
@@ -218,10 +219,7 @@ To reproduce all paper figures:
 python generate_figures.py
 ```
 
-To regenerate the complete paper:
-```bash
-python generate_final_paper.py
-```
+The published manuscript (MTCOMM-D-26-06017) is typeset in LaTeX and is **not** generated from this repository. `generate_final_paper.py` is a legacy generator for an earlier Word-format draft of this work; it is retained for provenance only and must not be used to regenerate the manuscript. Use `bash reproduce_all.sh` instead (see Data Availability below).
 
 ### Data Availability
 

@@ -28,11 +28,15 @@ python3 -c "import numpy; print('  numpy OK')" 2>/dev/null || {
 }
 python3 -c "import matplotlib" 2>/dev/null && echo "  matplotlib OK" || echo "  matplotlib not found (some figures will be skipped)"
 
-# Step 1: Generate paper (includes all embedded figures)
+# Step 1: legacy Word-draft generator (provenance only, NOT the manuscript)
 echo ""
-echo "[Step 1] Generating paper with all figures..."
-python3 generate_final_paper.py
-echo "  Paper generated successfully!"
+echo "[Step 1] Legacy Word draft (optional; the manuscript is LaTeX)..."
+if [ "${HPD_RVE_LEGACY_DOCX:-0}" = "1" ]; then
+  python3 generate_final_paper.py
+  echo "  Legacy Word draft generated (superseded numbers; do not cite)."
+else
+  echo "  Skipped. Set HPD_RVE_LEGACY_DOCX=1 to build the superseded draft."
+fi
 
 # Step 2: Run data fusion demo (DP800 CRSS conflict resolution)
 echo ""
@@ -100,7 +104,7 @@ echo ""
 echo "=========================================="
 echo "Reproduction Summary"
 echo "=========================================="
-echo "  Paper: $(ls -t RVE_Automated_Generation_Paper_Draft_Revised_*.docx 2>/dev/null | head -1)"
+echo "  Legacy Word draft (if built): $(ls -t RVE_Automated_Generation_Paper_Draft_Revised_*.docx 2>/dev/null | head -1)"
 echo "  Figures: $(ls figures_paper_latest/*.png 2>/dev/null | wc -l) PNG files"
 echo ""
 echo "To reproduce DAMASK simulations from scratch:"

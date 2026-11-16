@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+# LEGACY (pre-MTCOMM-D-26-06017): this script produces an earlier Word-format draft of HPD-RVE that carries superseded numbers (e.g. "185 MPa per 1% v_m", "R2 = 1.000", "100% cross-material generalization"). It is kept for provenance only and does NOT regenerate the manuscript of MTCOMM-D-26-06017.
+
 """
 生成RVE模型自动化方法论研究论文初稿
 """
